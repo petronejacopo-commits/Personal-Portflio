@@ -26,3 +26,11 @@ body {
     50% { transform: scale(1.05); }
   }
 }
+
+@theme {
+  --animate-bounce-diamond: bounce-diamond 2s infinite ease-in-out;
+  @keyframes bounce-diamond {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+  }
+}
