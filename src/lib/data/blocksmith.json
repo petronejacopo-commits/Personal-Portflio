@@ -1,0 +1,65 @@
+{
+  "hero": {
+    "title": "BLOCKSMITH",
+    "subtitle": "THE FORGE",
+    "paragraph": "Blocksmith nasce nel 2021 a Cuneo. Jacopo Petrone aveva 15 anni, era in pieno lockdown e passava le giornate al computer a studiare codice da solo. Non c'era un piano preciso — c'era solo la voglia di costruire qualcosa di concreto. Da quella stanza è nato tutto."
+  },
+  "storia": {
+    "title": "La Storia",
+    "paragraphs": [
+      "Qualche mese prima, nel 2020, Jacopo aveva conosciuto Luca Ferrari su Rainbow Six Siege. Giocavano sugli stessi server, hanno iniziato a parlare di progetti e non si sono più fermati. Mentre Jacopo si occupava della parte tecnica, Luca pensava alle persone — i clienti, i contatti, la strategia. Due mentalità diverse che insieme hanno dato forma a quello che Blocksmith è diventato. Nel 2021 Luca è entrato ufficialmente come co-fondatore e da allora gestisce tutto quello che riguarda le relazioni esterne, i mercati internazionali e la direzione strategica dello studio.",
+      "Il team è cresciuto nello stesso modo in cui sono nati i due fondatori — online, durante il COVID, tra server Discord, community di gaming e forum di programmazione. Ragazzi della stessa generazione, con le stesse passioni, che col tempo hanno trasformato quello che facevano per divertimento in un lavoro vero. Oggi sono dodici professionisti distribuiti tra Italia e dintorni, ognuno con il proprio ruolo e la propria specializzazione."
+    ]
+  },
+  "cosaFacciamo": {
+    "title": "Cosa Facciamo",
+    "items": [
+      {
+        "id": "sviluppo",
+        "title": "Sviluppo",
+        "text": "Applicazioni web, sistemi backend, infrastrutture di rete, API, architetture scalabili ed esperienze WebGL. Costruiamo cose che funzionano davvero, non solo che sembrano funzionare. Il codice che scriviamo va in produzione e ci resta.",
+        "icon": "gear",
+        "color": "#D4A843"
+      },
+      {
+        "id": "design",
+        "title": "Design",
+        "text": "UI/UX, brand identity, illustrazione, motion design, concept art e asset grafici per prodotti digitali e videogiochi. Lavoriamo dal concept al file finale senza dispersioni inutili. Progettiamo interfacce che si capiscono al primo sguardo e identità visive che rimangono impresse.",
+        "icon": "brush",
+        "color": "#B87351"
+      },
+      {
+        "id": "marketing",
+        "title": "Marketing e Crescita",
+        "text": "Strategia digitale, gestione dei social, crescita delle community, campagne pubblicitarie, SEO e produzione di contenuti. Non inseguiamo numeri temporanei. Costruiamo una presenza online misurabile che ha senso nel tempo.",
+        "icon": "chart",
+        "color": "#8B6B4A"
+      }
+    ]
+  },
+  "comeLavoriamo": {
+    "title": "Come Lavoriamo",
+    "paragraphs": [
+      "Ogni professionista di Blocksmith lavora direttamente con il proprio cliente. Nessun intermediario, nessun livello agenziale nel mezzo. Il 90% di ogni commissione va a chi ha svolto il lavoro. Il restante 10% serve a mantenere lo studio — gli strumenti, i server, l'infrastruttura che permette a tutto il team di operare bene.",
+      "È un modello che tiene i prezzi competitivi senza sacrificare la qualità, elimina i tempi morti e garantisce che chi lavora sul tuo progetto sia davvero motivato a portarlo a termine nel migliore dei modi.",
+      "Non proponiamo preventivi standard. Ascoltiamo il progetto, valutiamo se siamo le persone giuste per realizzarlo e, se la risposta è sì, andiamo dritti al punto."
+    ]
+  },
+  "aChiCiRivolgiamo": {
+    "title": "A Chi Ci Rivolgiamo",
+    "paragraphs": [
+      "Startup che devono muoversi in fretta. Creator che vogliono costruire qualcosa di solido attorno al loro progetto. Aziende che cercano un team tecnico o creativo senza dover gestire una struttura interna. Studi di gioco indipendenti che hanno bisogno di supporto su sviluppo, design o asset. Chiunque abbia un'idea chiara e voglia qualcuno che la realizzi senza perdersi in processi inutili.",
+      "Se sai già cosa ti serve, probabilmente abbiamo la persona giusta nel team. Se non lo sai ancora, possiamo aiutarti a capirlo — senza impegno e senza presentazioni commerciali."
+    ]
+  },
+  "doveSiamo": {
+    "title": "Dove Siamo",
+    "paragraphs": [
+      "Siamo italiani e operiamo a livello globale. Lavoriamo in italiano e in inglese, gestiamo clienti in più fusi orari e consegniamo con gli stessi standard indipendentemente da dove si trova il cliente. La qualità non dipende dalla lingua del contratto.",
+      "Siamo nati online, abbiamo imparato online e lavoriamo online. Ma quello che produciamo è concreto, misurabile e costruito per durare."
+    ]
+  },
+  "finale": {
+    "title": "Benvenuto alla Forge."
+  }
+}
