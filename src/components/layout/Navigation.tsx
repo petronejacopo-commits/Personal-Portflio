@@ -10,7 +10,7 @@ const navLinks = [
   { name: 'Chi Sono', path: '/about' },
   { name: 'Blocksmith', path: '/blocksmith' }, // Default path for blocksmith
   { name: 'Commissioni', path: '/commissioni' },
-  { name: 'My Devs', path: '/mydevs' },
+  { name: 'My Devs', path: '/my-devs' },
   { name: 'Team', path: '/team' }, // Default path for team
 ];
 
