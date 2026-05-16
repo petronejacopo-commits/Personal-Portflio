@@ -21,13 +21,13 @@ export default function HeroSection() {
   useGSAP(() => {
     if (!containerRef.current) return;
 
-    let mm = gsap.matchMedia();
+    const mm = gsap.matchMedia();
 
     mm.add({
       isDesktop: "(min-width: 768px)",
       isMobile: "(max-width: 767px)"
     }, (context) => {
-      let { isMobile } = context.conditions as { isMobile: boolean };
+      const { isMobile } = context.conditions as { isMobile: boolean };
 
       const tl = gsap.timeline({
         scrollTrigger: {
