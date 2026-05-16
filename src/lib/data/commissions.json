@@ -1,0 +1,49 @@
+{
+  "intro": {
+    "title": "Commissioni",
+    "subtitle": "Cosa posso fare per il tuo progetto"
+  },
+  "uxui": {
+    "title": "UX/UI Design",
+    "items": [
+      {
+        "id": "ux-1",
+        "image": "/assets/images/commissions/comm-ux-1.webp",
+        "caption": "Design per Dashboard B2B"
+      },
+      {
+        "id": "ux-2",
+        "image": "/assets/images/commissions/comm-ux-2.webp",
+        "caption": "Interfaccia Mobile RPG"
+      },
+      {
+        "id": "ux-3",
+        "image": "/assets/images/commissions/comm-ux-3.webp",
+        "caption": "Sito Web Corporate"
+      }
+    ]
+  },
+  "lore": {
+    "title": "Lore Design",
+    "text": "Scrittura di storie, background e mondi di gioco. Creo lore profonde e coinvolgenti per immergere i giocatori in universi credibili e affascinanti."
+  },
+  "social": {
+    "title": "Social Media Manager",
+    "items": [
+      {
+        "id": "social-1",
+        "title": "Campagna di Lancio",
+        "subtitle": "Metriche: +12K Follower, 1.5M Impression",
+        "image": "/assets/images/commissions/comm-social-1.webp",
+        "category": "Growth"
+      },
+      {
+        "id": "social-2",
+        "title": "Gestione Community",
+        "subtitle": "Metriche: +300% Engagement rate su Discord",
+        "image": "/assets/images/commissions/comm-social-2.webp",
+        "category": "Community"
+      }
+    ]
+  }
+}
