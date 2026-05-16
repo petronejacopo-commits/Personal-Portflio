@@ -29,9 +29,10 @@ export default function Footer() {
           <h4 className="font-ui text-white uppercase tracking-wider mb-2">Menu</h4>
           <Link href="/" className="text-gray-400 font-sans text-sm hover:text-amber-500 transition-colors">Home</Link>
           <Link href="/about" className="text-gray-400 font-sans text-sm hover:text-amber-500 transition-colors">Chi Sono</Link>
-          <Link href="/projects" className="text-gray-400 font-sans text-sm hover:text-amber-500 transition-colors">Progetti</Link>
+          <Link href="/blocksmith" className="text-gray-400 font-sans text-sm hover:text-amber-500 transition-colors">Blocksmith</Link>
           <Link href="/commissions" className="text-gray-400 font-sans text-sm hover:text-amber-500 transition-colors">Commissioni</Link>
           <Link href="/mydevs" className="text-gray-400 font-sans text-sm hover:text-amber-500 transition-colors">My Devs</Link>
+          <Link href="/team" className="text-gray-400 font-sans text-sm hover:text-amber-500 transition-colors">Team</Link>
         </div>
 
         {/* Colonna 3: Social Icons */}

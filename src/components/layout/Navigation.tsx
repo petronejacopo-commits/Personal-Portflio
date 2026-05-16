@@ -8,9 +8,10 @@ import Image from 'next/image';
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'Chi Sono', path: '/about' },
-  { name: 'Progetti', path: '/projects' },
+  { name: 'Blocksmith', path: '/blocksmith' }, // Default path for blocksmith
   { name: 'Commissioni', path: '/commissions' },
   { name: 'My Devs', path: '/mydevs' },
+  { name: 'Team', path: '/team' }, // Default path for team
 ];
 
 export default function Navigation() {
