@@ -36,7 +36,7 @@ export default function HeroSection() {
         <Image
           src="/assets/images/backgrounds/bg-texture-1.webp"
           alt="Background Texture"
-          fill
+          fill loading="eager"
           priority
           className="object-cover opacity-60"
         />
@@ -51,7 +51,7 @@ export default function HeroSection() {
         <Image
           src="/assets/images/backgrounds/bg-geometric-1.webp"
           alt="Geometric Background"
-          fill
+          fill loading="eager"
           priority
           className="object-cover opacity-50"
         />
@@ -66,7 +66,7 @@ export default function HeroSection() {
         <Image
           src="/assets/images/backgrounds/bg-amber-accents.webp"
           alt="Amber Accents"
-          fill
+          fill loading="eager"
           priority
           className="object-cover opacity-80"
         />
@@ -79,7 +79,7 @@ export default function HeroSection() {
             <Image
               src="/assets/images/logo/logo-raccoon.svg"
               alt="Procione Logo"
-              fill
+              fill loading="eager"
               className="object-contain"
               priority
             />

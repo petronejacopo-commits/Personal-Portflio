@@ -34,3 +34,9 @@ body {
     50% { transform: translateY(10px); }
   }
 }
+
+/* Aggiunta dello stile focus globale per accessibilità */
+*:focus-visible {
+  outline: 2px solid #D4A843;
+  outline-offset: 2px;
+}

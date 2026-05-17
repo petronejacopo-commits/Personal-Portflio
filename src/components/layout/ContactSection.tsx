@@ -42,7 +42,7 @@ export default function ContactSection() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full bg-[#1A1A1A] border border-[#262626] p-4 text-white font-sans focus:outline-none focus:border-amber-500 transition-colors"
+            className="w-full bg-[#1A1A1A] border border-[#262626] p-4 text-white font-sans focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
           />
         </div>
 
@@ -57,7 +57,7 @@ export default function ContactSection() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full bg-[#1A1A1A] border border-[#262626] p-4 text-white font-sans focus:outline-none focus:border-amber-500 transition-colors"
+            className="w-full bg-[#1A1A1A] border border-[#262626] p-4 text-white font-sans focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
           />
         </div>
 
@@ -72,7 +72,7 @@ export default function ContactSection() {
             onChange={handleChange}
             required
             rows={5}
-            className="w-full bg-[#1A1A1A] border border-[#262626] p-4 text-white font-sans focus:outline-none focus:border-amber-500 transition-colors resize-y"
+            className="w-full bg-[#1A1A1A] border border-[#262626] p-4 text-white font-sans focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors resize-y"
           />
         </div>
 

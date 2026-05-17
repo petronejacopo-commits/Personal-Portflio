@@ -5,7 +5,7 @@ import AdminButton from '../ui/AdminButton';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 pt-12 pb-6 px-8 border-t border-gray-800">
+    <footer aria-label="Site Footer" className="bg-gray-900 pt-12 pb-6 px-8 border-t border-gray-800">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         {/* Colonna 1: Logo e Copyright */}
         <div className="flex flex-col items-start gap-4">
@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="flex flex-col gap-3">
           <h4 className="font-ui text-white uppercase tracking-wider mb-2">Menu</h4>
           <Link href="/" className="text-gray-400 font-sans text-sm hover:text-amber-500 transition-colors">Home</Link>
-          <Link href="/about" className="text-gray-400 font-sans text-sm hover:text-amber-500 transition-colors">Chi Sono</Link>
+          <Link href="/chi-sono" className="text-gray-400 font-sans text-sm hover:text-amber-500 transition-colors">Chi Sono</Link>
           <Link href="/blocksmith" className="text-gray-400 font-sans text-sm hover:text-amber-500 transition-colors">Blocksmith</Link>
           <Link href="/commissioni" className="text-gray-400 font-sans text-sm hover:text-amber-500 transition-colors">Commissioni</Link>
           <Link href="/my-devs" className="text-gray-400 font-sans text-sm hover:text-amber-500 transition-colors">My Devs</Link>

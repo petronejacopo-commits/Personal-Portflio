@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'Chi Sono', path: '/about' },
+  { name: 'Chi Sono', path: '/chi-sono' },
   { name: 'Blocksmith', path: '/blocksmith' }, // Default path for blocksmith
   { name: 'Commissioni', path: '/commissioni' },
   { name: 'My Devs', path: '/my-devs' },
@@ -20,7 +20,7 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full h-[64px] z-50 bg-[#0D0D0D]/95 backdrop-blur-sm flex items-center justify-between px-8 border-b border-gray-800">
+      <nav aria-label="Main Navigation" className="fixed top-0 left-0 w-full h-[64px] z-50 bg-[#0D0D0D]/95 backdrop-blur-sm flex items-center justify-between px-8 border-b border-gray-800">
         {/* Logo Section */}
         <Link href="/" className="flex items-center gap-3 relative z-[60]">
           <div className="w-[30px] h-[30px] relative flex items-center justify-center">

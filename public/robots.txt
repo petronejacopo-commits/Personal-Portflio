@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin
+
+# Host
+Host: https://procione.com
+
+# Sitemaps
+Sitemap: https://procione.com/sitemap.xml
