@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useState } from 'react';
@@ -6,6 +7,8 @@ import ProgressBar from '@/components/ui/ProgressBar';
 import AmberButton from '@/components/ui/AmberButton';
 import Modal from '@/components/ui/Modal';
 import ScrollReveal from '@/components/ui/ScrollReveal';
+import { gridStaggerReveal } from '@/lib/anime-effects';
+import { useGSAP } from '@gsap/react';
 
 type TeamMember = {
   id: string;
@@ -19,6 +22,7 @@ type TeamMember = {
   sampleFile: string;
   founder: boolean;
   color?: string;
+  avatar?: string;
 };
 
 export default function TeamSection() {
@@ -29,6 +33,23 @@ export default function TeamSection() {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
   const closeModal = () => setSelectedMember(null);
+
+  const gridRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          gridStaggerReveal('.team-grid-container');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    if (gridRef.current) observer.observe(gridRef.current);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="py-[40px] px-[16px] md:py-[80px] md:px-[32px] max-w-[1200px] mx-auto">
@@ -93,37 +114,40 @@ export default function TeamSection() {
 
       {/* SEZIONE TEAM */}
       <section className="mb-24 mt-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 team-grid-container">
           {members.map((member, index) => (
-            <ScrollReveal key={member.id} delay={(index % 3) * 0.1}>
-              <div
-                className="bg-gray-900 p-6 border-t-[2px] border-amber-500 transition-transform duration-300 hover:-translate-y-1 flex flex-col h-full"
-              >
-                <h3 className="font-title text-lg text-white uppercase tracking-wider mb-1">
-                  {member.name} {member.surname}
-                </h3>
-                <p className="font-sans text-sm text-gray-400 mb-2">
-                  {member.birthYear} | {member.city}
-                </p>
-                <span className="font-ui text-sm text-amber-500 uppercase tracking-widest mb-4">
-                  {member.role}
-                </span>
-                <p className="font-sans text-sm text-gray-400 leading-relaxed mb-6 flex-grow line-clamp-4">
-                  {member.description}
-                </p>
-
-                <div className="mt-auto pt-4 border-t border-gray-800">
-                  <AmberButton
-                    variant="ghost"
-                    onClick={() => setSelectedMember(member)}
-                    className="w-full justify-between px-0 hover:text-amber-500"
-                  >
-                    <span>Vedi Progetto</span>
-                    <span>→</span>
-                  </AmberButton>
-                </div>
+            <div
+              key={member.id}
+              className="bg-gray-900 p-6 border-t-[2px] border-amber-500 transition-transform duration-300 hover:-translate-y-1 flex flex-col h-full card-item"
+              style={{ opacity: 0 }}
+            >
+              <div className="w-[48px] h-[48px] mb-4 overflow-hidden rounded-full border border-gray-800 bg-black flex-shrink-0">
+                {member.avatar && <img src={member.avatar} alt={member.name} className="w-full h-full object-cover" />}
               </div>
-            </ScrollReveal>
+              <h3 className="font-title text-lg text-white uppercase tracking-wider mb-1">
+                {member.name} {member.surname}
+              </h3>
+              <p className="font-sans text-sm text-gray-400 mb-2">
+                {member.birthYear} | {member.city}
+              </p>
+              <span className="font-ui text-sm text-amber-500 uppercase tracking-widest mb-4">
+                {member.role}
+              </span>
+              <p className="font-sans text-sm text-gray-400 leading-relaxed mb-6 flex-grow line-clamp-4">
+                {member.description}
+              </p>
+
+              <div className="mt-auto pt-4 border-t border-gray-800">
+                <AmberButton
+                  variant="ghost"
+                  onClick={() => setSelectedMember(member)}
+                  className="w-full justify-between px-0 hover:text-amber-500"
+                >
+                  <span>Vedi Progetto</span>
+                  <span>→</span>
+                </AmberButton>
+              </div>
+            </div>
           ))}
         </div>
       </section>

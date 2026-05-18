@@ -1,17 +1,24 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { useGSAP } from '@gsap/react';
 import { parallaxEffect } from '@/lib/animations';
 import PulseAnimation from '@/components/ui/PulseAnimation';
 import AmberButton from '@/components/ui/AmberButton';
+import { logoLineDrawing, particleBurst, typewriterEnhanced } from '@/lib/anime-effects';
+import anime from 'animejs';
 
 export default function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null);
   const layer1Ref = useRef<HTMLDivElement>(null);
   const layer2Ref = useRef<HTMLDivElement>(null);
   const layer3Ref = useRef<HTMLDivElement>(null);
+
+  // Refs per Anime.js (separati)
+  const svgLogoRef = useRef<SVGSVGElement>(null);
+  const subtitleRef = useRef<HTMLParagraphElement>(null);
+  const buttonRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
     if (!containerRef.current) return;
@@ -21,6 +28,33 @@ export default function HeroSection() {
     if (layer2Ref.current) parallaxEffect(layer2Ref.current, 0.5, isMobile);
     if (layer3Ref.current && !isMobile) parallaxEffect(layer3Ref.current, 0.8, isMobile);
   }, { scope: containerRef });
+
+  useEffect(() => {
+    if (svgLogoRef.current) {
+      logoLineDrawing(svgLogoRef.current);
+    }
+
+    if (subtitleRef.current) {
+      (subtitleRef.current as any)._interval = typewriterEnhanced(subtitleRef.current, 'Game Designer & UX/UI Specialist', 50);
+    }
+
+    return () => {
+      // Cleanup anime instances su questi target
+      if (svgLogoRef.current) {
+        const paths = svgLogoRef.current.querySelectorAll('path, circle, line');
+        anime.remove(paths);
+      }
+      if (subtitleRef.current) {
+        anime.remove(subtitleRef.current); clearInterval((subtitleRef.current as any)._interval);
+      }
+    };
+  }, []);
+
+  const handleParticleClick = () => {
+    if (buttonRef.current) {
+      particleBurst(buttonRef.current, '#D4A843');
+    }
+  };
 
   return (
     <section
@@ -75,14 +109,20 @@ export default function HeroSection() {
       {/* Contenuto Centrale */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <PulseAnimation className="mb-6">
-          <div className="relative w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
-            <Image
-              src="/assets/images/logo/logo-raccoon.svg"
-              alt="Procione Logo"
-              fill loading="eager"
-              className="object-contain"
-              priority
-            />
+          <div className="relative w-[80px] h-[80px] md:w-[120px] md:h-[120px] flex items-center justify-center">
+            {/* Inline SVG instead of Image tag to allow Anime.js to target paths */}
+            <svg
+              ref={svgLogoRef}
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-full h-full"
+            >
+              <circle cx="12" cy="12" r="10" stroke="#D4A843" strokeWidth="2"/>
+              <circle cx="9" cy="10" r="2" className="eye" fill="transparent"/>
+              <circle cx="15" cy="10" r="2" className="eye" fill="transparent"/>
+              <path d="M10 16C10 16 11 17 12 17C13 17 14 16 14 16" stroke="#D4A843" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
           </div>
         </PulseAnimation>
 
@@ -90,14 +130,19 @@ export default function HeroSection() {
           PROCIONE
         </h1>
 
-        <p className="font-sans text-lg md:text-xl text-amber-500 mb-8">
-          Game Designer & UX/UI Specialist
+        <p
+          ref={subtitleRef}
+          className="font-sans text-lg md:text-xl text-amber-500 mb-8 min-h-[30px]"
+        >
+          {/* Managed by Anime.js typewriter */}
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 mt-8">
-          <AmberButton href="/blocksmith" variant="primary">
-            Esplora Progetti
-          </AmberButton>
+          <div ref={buttonRef} onClick={handleParticleClick}>
+            <AmberButton href="/blocksmith" variant="primary">
+              Esplora Progetti
+            </AmberButton>
+          </div>
           <AmberButton href="/chi-sono" variant="secondary">
             Chi Sono
           </AmberButton>

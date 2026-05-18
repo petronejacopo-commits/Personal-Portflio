@@ -20,7 +20,7 @@
     {
       "id": "dev",
       "title": "Sviluppo Software, Backend & QA",
-      "icon": "gear",
+      "icon": "/assets/images/icons/icon-dev.svg",
       "items": [
         "Sviluppo Backend Java & Architettura Software (Dal 2020)",
         "Backend & Network Infrastructure | AzureMC (Nov 2025 – In corso)",
@@ -31,7 +31,7 @@
     {
       "id": "legal",
       "title": "Legal Tech, Compliance & Difesa Digitale",
-      "icon": "shield",
+      "icon": "/assets/images/icons/icon-legal.svg",
       "items": [
         "Analisi DSA e Platform Policies (Dal 2024)",
         "Consulenza DSA / ADR / ODS (Gen 2026 – In corso)"
@@ -40,7 +40,7 @@
     {
       "id": "biz",
       "title": "Imprenditorialità & Operations",
-      "icon": "portal",
+      "icon": "/assets/images/icons/icon-business.svg",
       "items": [
         "Fondazione BLOCKSMITH (Dal 2021)",
         "Gestione Amministrativa e Flussi di Lavoro (Dal 2021)"

@@ -18,21 +18,21 @@
         "id": "sviluppo",
         "title": "Sviluppo",
         "text": "Applicazioni web, sistemi backend, infrastrutture di rete, API, architetture scalabili ed esperienze WebGL. Costruiamo cose che funzionano davvero, non solo che sembrano funzionare. Il codice che scriviamo va in produzione e ci resta.",
-        "icon": "gear",
+        "icon": "/assets/images/icons/icon-sviluppo.svg",
         "color": "#D4A843"
       },
       {
         "id": "design",
         "title": "Design",
         "text": "UI/UX, brand identity, illustrazione, motion design, concept art e asset grafici per prodotti digitali e videogiochi. Lavoriamo dal concept al file finale senza dispersioni inutili. Progettiamo interfacce che si capiscono al primo sguardo e identità visive che rimangono impresse.",
-        "icon": "brush",
+        "icon": "/assets/images/icons/icon-design.svg",
         "color": "#B87351"
       },
       {
         "id": "marketing",
         "title": "Marketing e Crescita",
         "text": "Strategia digitale, gestione dei social, crescita delle community, campagne pubblicitarie, SEO e produzione di contenuti. Non inseguiamo numeri temporanei. Costruiamo una presenza online misurabile che ha senso nel tempo.",
-        "icon": "chart",
+        "icon": "/assets/images/icons/icon-marketing.svg",
         "color": "#8B6B4A"
       }
     ]

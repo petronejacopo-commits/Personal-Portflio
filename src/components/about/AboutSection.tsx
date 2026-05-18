@@ -9,35 +9,6 @@ import ProgressBar from '@/components/ui/ProgressBar';
 import TimelineItem from '@/components/ui/TimelineItem';
 import { parallaxEffect } from '@/lib/animations';
 
-const getIcon = (iconName: string) => {
-  switch (iconName) {
-    case 'gear':
-      return (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4A843" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="12" cy="12" r="3"></circle>
-          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-        </svg>
-      );
-    case 'shield':
-      return (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4A843" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-        </svg>
-      );
-    case 'portal':
-      return (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4A843" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M2 12h20"></path>
-          <path d="M12 2v20"></path>
-          <path d="m4.93 4.93 14.14 14.14"></path>
-          <path d="m19.07 4.93-14.14 14.14"></path>
-        </svg>
-      );
-    default:
-      return null;
-  }
-};
-
 export default function AboutSection() {
   const { bio, stats, specialAbility, skills, timeline } = aboutData;
   const containerRef = useRef<HTMLDivElement>(null);
@@ -110,7 +81,7 @@ export default function AboutSection() {
               <ScrollReveal key={index} direction="up" delay={index * 0.15}>
                 <div className="bg-gray-900 p-6 border-t-[2px] border-amber-500 h-full">
                   <div className="mb-6">
-                    {getIcon(skill.icon)}
+                    <img src={skill.icon} alt="" className="w-[32px] h-[32px] object-contain filter-amber-500" />
                   </div>
                   <h3 className="font-title text-xl text-white mb-4 h-[56px]">{skill.title}</h3>
                   <ul className="flex flex-col gap-3">

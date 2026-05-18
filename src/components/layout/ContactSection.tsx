@@ -1,8 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import { formSuccessMorph } from '@/lib/anime-effects';
 
 export default function ContactSection() {
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -18,7 +20,8 @@ export default function ContactSection() {
     localStorage.setItem('procione_messages', JSON.stringify([...existingMessages, { ...formData, date: new Date().toISOString() }]));
 
     // Show alert
-    alert('Messaggio inviato! Ti risponderò entro 48 ore.');
+    if (formRef.current) formSuccessMorph(formRef.current.parentElement as HTMLElement);
+    setTimeout(() => alert('Messaggio inviato! Ti risponderò entro 48 ore.'), 600);
 
     // Reset form
     setFormData({ name: '', email: '', message: '' });
@@ -26,11 +29,12 @@ export default function ContactSection() {
 
   return (
     <div className="py-[40px] px-[16px] md:py-[80px] md:px-[32px] max-w-[600px] mx-auto">
+      <div className="flex justify-center mb-4"><svg id="raven-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 22h20L12 2z" stroke="#D4A843" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
       <h2 className="font-title text-2xl text-amber-500 mb-8 uppercase tracking-widest text-center">
         Contattami
       </h2>
 
-      <form onSubmit={handleSubmit} className="flex flex-col gap-6 mb-12">
+      <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6 mb-12">
         <div>
           <label htmlFor="name" className="block font-sans text-xs text-gray-400 mb-2 uppercase tracking-wider">
             Nome
