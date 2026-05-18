@@ -20,7 +20,7 @@ export default function MyDevsSection() {
   const { intro, devs } = mydevsData;
 
   return (
-    <div className="pt-[80px] pb-[80px] px-[32px] max-w-[1200px] mx-auto">
+    <div className="py-[40px] px-[16px] md:py-[80px] md:px-[32px] max-w-[1200px] mx-auto">
 
       {/* INTRO */}
       <section className="mb-16">

@@ -51,7 +51,7 @@ export default function AboutSection() {
   }, { scope: containerRef });
 
   return (
-    <div ref={containerRef} className="relative pt-[80px] pb-[80px] px-[32px] overflow-hidden">
+    <div ref={containerRef} className="relative py-[40px] px-[16px] md:py-[80px] md:px-[32px] overflow-hidden">
 
       {/* Texture Background */}
       <div

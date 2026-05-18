@@ -38,7 +38,7 @@ export default function BlocksmithSection() {
   const { hero, storia, cosaFacciamo, comeLavoriamo, aChiCiRivolgiamo, doveSiamo, finale } = blocksmithData;
 
   return (
-    <div className="pt-[80px] pb-[80px] px-[32px] max-w-[1000px] mx-auto">
+    <div className="py-[40px] px-[16px] md:py-[80px] md:px-[32px] max-w-[1000px] mx-auto">
 
       {/* HERO */}
       <section className="flex flex-col items-center justify-center mb-16">

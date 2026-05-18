@@ -9,7 +9,7 @@ export default function RoadmapSection() {
   const { events } = roadmapData;
 
   return (
-    <div className="pt-[80px] pb-[80px] px-[32px] max-w-[1200px] mx-auto">
+    <div className="py-[40px] px-[16px] md:py-[80px] md:px-[32px] max-w-[1200px] mx-auto">
       <h2 className="font-title text-3xl text-amber-500 mb-8 uppercase tracking-widest">
         Roadmap
       </h2>

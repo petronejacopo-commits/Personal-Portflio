@@ -86,7 +86,7 @@ export default function HeroSection() {
           </div>
         </PulseAnimation>
 
-        <h1 className="font-title text-3xl md:text-6xl text-white tracking-widest uppercase mb-4">
+        <h1 className="font-title text-3xl md:text-4xl lg:text-6xl text-white tracking-widest uppercase mb-4">
           PROCIONE
         </h1>
 

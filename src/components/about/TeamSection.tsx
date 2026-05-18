@@ -31,7 +31,7 @@ export default function TeamSection() {
   const closeModal = () => setSelectedMember(null);
 
   return (
-    <div className="pt-[80px] pb-[80px] px-[32px] max-w-[1200px] mx-auto">
+    <div className="py-[40px] px-[16px] md:py-[80px] md:px-[32px] max-w-[1200px] mx-auto">
 
       {/* SEZIONE INTRO */}
       <section className="flex flex-col items-center mb-24">

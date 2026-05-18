@@ -25,7 +25,7 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="pt-[80px] pb-[80px] px-[32px] max-w-[600px] mx-auto">
+    <div className="py-[40px] px-[16px] md:py-[80px] md:px-[32px] max-w-[600px] mx-auto">
       <h2 className="font-title text-2xl text-amber-500 mb-8 uppercase tracking-widest text-center">
         Contattami
       </h2>
