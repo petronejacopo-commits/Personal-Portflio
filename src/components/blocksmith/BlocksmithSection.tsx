@@ -81,7 +81,8 @@ export default function BlocksmithSection() {
                 style={{ borderTop: `3px solid ${item.color}` }}
               >
                 <div className="mb-6" style={{ color: item.color }}>
-                  <img src={item.icon} alt="" className="w-[32px] h-[32px] object-contain"  />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+<img src={item.icon} alt="" className="w-[32px] h-[32px] object-contain"  />
                 </div>
                 <h3 className="font-title reveal-item text-xl text-white mb-4 tracking-widest">{item.title}</h3>
                 <p className="font-sans reveal-item text-sm text-gray-400 leading-relaxed">

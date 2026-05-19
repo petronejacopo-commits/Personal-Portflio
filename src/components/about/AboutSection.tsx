@@ -81,7 +81,8 @@ export default function AboutSection() {
               <ScrollReveal key={index} direction="up" delay={index * 0.15}>
                 <div className="bg-gray-900 p-6 border-t-[2px] border-amber-500 h-full">
                   <div className="mb-6">
-                    <img src={skill.icon} alt="" className="w-[32px] h-[32px] object-contain filter-amber-500" />
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+<img src={skill.icon} alt="" className="w-[32px] h-[32px] object-contain filter-amber-500" />
                   </div>
                   <h3 className="font-title text-xl text-white mb-4 h-[56px]">{skill.title}</h3>
                   <ul className="flex flex-col gap-3">

@@ -122,7 +122,10 @@ export default function TeamSection() {
               style={{ opacity: 0 }}
             >
               <div className="w-[48px] h-[48px] mb-4 overflow-hidden rounded-full border border-gray-800 bg-black flex-shrink-0">
-                {member.avatar && <img src={member.avatar} alt={member.name} className="w-full h-full object-cover" />}
+                {member.avatar && (
+  /* eslint-disable-next-line @next/next/no-img-element */
+  <img src={member.avatar} alt={member.name} className="w-full h-full object-cover" />
+)}
               </div>
               <h3 className="font-title text-lg text-white uppercase tracking-wider mb-1">
                 {member.name} {member.surname}
