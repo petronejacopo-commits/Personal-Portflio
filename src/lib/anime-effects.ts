@@ -31,15 +31,15 @@ export const logoLineDrawing = (svgElement: SVGSVGElement): void => {
 };
 
 export const textScramble = (element: HTMLElement, finalText: string, duration: number = 1000): NodeJS.Timeout | undefined => {
-  let interval: NodeJS.Timeout | undefined;
 
-  if (!element) return;
+
+  if (!element) return undefined;
   const chars = '!<>-_\\\\/[]{}—=+*^?#________';
   const timePerFrame = 50;
   const frames = Math.floor(duration / timePerFrame);
   let frame = 0;
 
-  interval = setInterval(() => {
+  const interval = setInterval(() => {
     let scrambled = '';
     for (let i = 0; i < finalText.length; i++) {
       if (frame >= frames * (i / finalText.length)) {
@@ -138,7 +138,7 @@ export const formSuccessMorph = (formElement: HTMLElement): void => {
 };
 
 export const springHoverEffect = (element: HTMLElement): void => {
-  if (!element) return;
+  if (!element) return undefined;
 
   element.addEventListener('mouseenter', () => {
     anime.remove(element);
@@ -162,13 +162,13 @@ export const springHoverEffect = (element: HTMLElement): void => {
 };
 
 export const typewriterEnhanced = (element: HTMLElement, text: string, speed: number = 50): NodeJS.Timeout | undefined => {
-  let interval: NodeJS.Timeout | undefined;
 
-  if (!element) return;
+
+  if (!element) return undefined;
   element.innerText = '';
 
   let i = 0;
-  interval = setInterval(() => {
+  const interval = setInterval(() => {
     if (i < text.length) {
       element.innerText = text.substring(0, i + 1) + '|';
       i++;

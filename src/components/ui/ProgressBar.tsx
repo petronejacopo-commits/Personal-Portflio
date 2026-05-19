@@ -22,6 +22,7 @@ export default function ProgressBar({ label, value, className = '' }: ProgressBa
   const containerRef = useRef<HTMLDivElement>(null);
   const labelRef = useRef<HTMLSpanElement>(null);
   const valueRef = useRef<HTMLSpanElement>(null);
+  const intervalRefs = useRef<Record<string, NodeJS.Timeout | undefined>>({});
 
   useGSAP(() => {
     if (!barRef.current || !containerRef.current) return;
@@ -47,8 +48,8 @@ export default function ProgressBar({ label, value, className = '' }: ProgressBa
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          if (labelRef.current) (labelRef.current as any)._interval = textScramble(labelRef.current, label, 1000);
-          if (valueRef.current) (valueRef.current as any)._interval = textScramble(valueRef.current, `${value}%`, 1000);
+          if (labelRef.current) intervalRefs.current['label'] = textScramble(labelRef.current, label, 1000) as NodeJS.Timeout;
+          if (valueRef.current) intervalRefs.current['value'] = textScramble(valueRef.current, `${value}%`, 1000) as NodeJS.Timeout;
           observer.unobserve(entry.target);
         }
       });
@@ -56,12 +57,21 @@ export default function ProgressBar({ label, value, className = '' }: ProgressBa
 
     observer.observe(containerRef.current);
 
+    const container = containerRef.current;
+    const labelEl = labelRef.current;
+    const valueEl = valueRef.current;
+    const intervals = intervalRefs.current;
+
     return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
+      if (container) observer.unobserve(container);
+      if (labelEl) {
+        anime.remove(labelEl);
+        clearInterval(intervals['label']);
       }
-      if (labelRef.current) { anime.remove(labelRef.current); clearInterval((labelRef.current as any)._interval); }
-      if (valueRef.current) { anime.remove(valueRef.current); clearInterval((valueRef.current as any)._interval); }
+      if (valueEl) {
+        anime.remove(valueEl);
+        clearInterval(intervals['value']);
+      }
     };
   }, [label, value]);
 

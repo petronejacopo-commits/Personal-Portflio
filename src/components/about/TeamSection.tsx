@@ -8,7 +8,7 @@ import AmberButton from '@/components/ui/AmberButton';
 import Modal from '@/components/ui/Modal';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 import { gridStaggerReveal } from '@/lib/anime-effects';
-import { useGSAP } from '@gsap/react';
+
 
 type TeamMember = {
   id: string;

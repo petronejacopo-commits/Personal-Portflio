@@ -5,8 +5,8 @@ import blocksmithData from '@/lib/data/blocksmith.json';
 import SectionDivider from '@/components/ui/SectionDivider';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 import { sectionWaveTransition } from '@/lib/anime-effects';
-import { useGSAP } from '@gsap/react';
-import anime from 'animejs';
+
+
 
 // Helper for inline SVG icons based on ID
 export default function BlocksmithSection() {

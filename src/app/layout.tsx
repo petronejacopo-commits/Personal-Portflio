@@ -20,7 +20,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Procione | Game Designer & UX/UI Specialist",
+  metadataBase: new URL('https://procione.com'),
+  title: 'Procione | Game Designer & UX/UI Specialist',
   description: "Portfolio di Procione - Game Designer e UX/UI Specialist. Scopri i miei progetti, commissioni e risorse di sviluppo.",
   openGraph: {
     images: ["/assets/images/logo/logo-raccoon.svg"],

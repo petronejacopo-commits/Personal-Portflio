@@ -19,6 +19,7 @@ export default function HeroSection() {
   const svgLogoRef = useRef<SVGSVGElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const buttonRef = useRef<HTMLDivElement>(null);
+  const intervalRefs = useRef<Record<string, NodeJS.Timeout | undefined>>({});
 
   useGSAP(() => {
     if (!containerRef.current) return;
@@ -30,22 +31,26 @@ export default function HeroSection() {
   }, { scope: containerRef });
 
   useEffect(() => {
-    if (svgLogoRef.current) {
-      logoLineDrawing(svgLogoRef.current);
+    const svgLogo = svgLogoRef.current;
+    const subtitle = subtitleRef.current;
+
+    if (svgLogo) {
+      logoLineDrawing(svgLogo);
     }
 
-    if (subtitleRef.current) {
-      (subtitleRef.current as any)._interval = typewriterEnhanced(subtitleRef.current, 'Game Designer & UX/UI Specialist', 50);
+    if (subtitle) {
+      intervalRefs.current['subtitle'] = typewriterEnhanced(subtitle, 'Game Designer & UX/UI Specialist', 50) as NodeJS.Timeout;
     }
 
     return () => {
       // Cleanup anime instances su questi target
-      if (svgLogoRef.current) {
-        const paths = svgLogoRef.current.querySelectorAll('path, circle, line');
+      if (svgLogo) {
+        const paths = svgLogo.querySelectorAll('path, circle, line');
         anime.remove(paths);
       }
-      if (subtitleRef.current) {
-        anime.remove(subtitleRef.current); clearInterval((subtitleRef.current as any)._interval);
+      if (subtitle) {
+        anime.remove(subtitle);
+        clearInterval(intervalRefs.current['subtitle']);
       }
     };
   }, []);
