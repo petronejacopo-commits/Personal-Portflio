@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@theme {
+  --animate-pulse-scale: pulse-scale 2s ease-in-out infinite;
+  @keyframes pulse-scale {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+}
+
+@theme {
+  --animate-bounce-diamond: bounce-diamond 2s infinite ease-in-out;
+  @keyframes bounce-diamond {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+  }
+}
+
+/* Aggiunta dello stile focus globale per accessibilità */
+*:focus-visible {
+  outline: 2px solid #D9A63E;
+  outline-offset: 2px;
+}

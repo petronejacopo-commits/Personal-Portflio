@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "year": "2020",
+      "title": "Il Lockdown & La Svolta Tech",
+      "description": "Inizio programmazione a 14 anni. Studio metodico backend Java.",
+      "status": "completed"
+    },
+    {
+      "year": "2021",
+      "title": "Fondazione BLOCKSMITH",
+      "description": "A 15 anni apro lo studio indipendente.",
+      "status": "completed"
+    },
+    {
+      "year": "2024",
+      "title": "Legal Tech",
+      "description": "Studio DSA e diritti digitali dopo ban ingiusto.",
+      "status": "completed"
+    },
+    {
+      "year": "Agosto 2025",
+      "title": "QA Tester",
+      "description": "Debugging e sicurezza sistemi (fino Apr 2026).",
+      "status": "completed"
+    },
+    {
+      "year": "Novembre 2025",
+      "title": "AzureMC",
+      "description": "Backend e network infrastructure.",
+      "status": "completed"
+    },
+    {
+      "year": "Gennaio 2026",
+      "title": "Consulenza DSA/ADR/ODS",
+      "description": "Servizio attivo difesa ban.",
+      "status": "in-progress"
+    },
+    {
+      "year": "Maggio 2026",
+      "title": "Oggi",
+      "description": "Blocksmith profilo consolidato, mercato internazionale.",
+      "status": "in-progress"
+    }
+  ]
+}

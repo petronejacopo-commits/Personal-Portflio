@@ -1,0 +1,228 @@
+{
+  "team": [
+    {
+      "id": "jacopo",
+      "name": "JACOPO",
+      "surname": "PETRONE",
+      "birthYear": 2006,
+      "city": "Cuneo",
+      "role": "Fondatore",
+      "description": "Cuneo, 2006. Sviluppatore backend, architetto software, specialista Legal Tech. 5 anni di esperienza autodidatta. Ex AzureMC, QA tester, fondatore Blocksmith a 15 anni.",
+      "stats": [
+        {
+          "label": "CODING",
+          "value": 95
+        },
+        {
+          "label": "DESIGN",
+          "value": 90
+        },
+        {
+          "label": "LEADERSHIP",
+          "value": 88
+        },
+        {
+          "label": "PROBLEM SOLVING",
+          "value": 96
+        },
+        {
+          "label": "GRIND",
+          "value": 100
+        }
+      ],
+      "sampleFile": "",
+      "founder": true,
+      "color": "#D9A63E"
+    },
+    {
+      "id": "luca",
+      "name": "LUCA",
+      "surname": "FERRARI",
+      "birthYear": 2006,
+      "city": "Unknown",
+      "role": "Co-Fondatore | VESPER",
+      "description": "2006. Strategy Lead, networking, relazioni esterne. La mente dietro la crescita strategica di Blocksmith.",
+      "stats": [
+        {
+          "label": "STRATEGY",
+          "value": 98
+        },
+        {
+          "label": "NETWORKING",
+          "value": 96
+        },
+        {
+          "label": "VISIONE",
+          "value": 94
+        },
+        {
+          "label": "COMUNICAZIONE",
+          "value": 97
+        },
+        {
+          "label": "EXECUTION",
+          "value": 91
+        }
+      ],
+      "sampleFile": "",
+      "founder": true,
+      "color": "#DC4424"
+    },
+    {
+      "id": "alessandro",
+      "name": "Alessandro",
+      "surname": "Greco",
+      "birthYear": 2005,
+      "city": "Napoli",
+      "role": "3D Artist",
+      "description": "L'ho conosciuto su Discord nel 2020. Passava il lockdown a costruire mappe e ambienti virtuali. Quando Blocksmith ha iniziato ad avere bisogno di qualcuno che sapesse lavorare in 3D, era la prima persona a cui ho pensato.",
+      "stats": [],
+      "sampleFile": "",
+      "founder": false,
+      "avatar": "/assets/images/icons/avatar-alessandro.svg"
+    },
+    {
+      "id": "riccardo",
+      "name": "Riccardo",
+      "surname": "Conti",
+      "birthYear": 2004,
+      "city": "Torino",
+      "role": "Backend Developer",
+      "description": "Ci siamo trovati su un forum di programmazione Java nel 2020. Entrambi a studiare da soli, gli stessi problemi, le stesse domande. È la persona di cui mi fido di più quando si tratta di sistemi server e database.",
+      "stats": [],
+      "sampleFile": "",
+      "founder": false,
+      "avatar": "/assets/images/icons/avatar-riccardo.svg"
+    },
+    {
+      "id": "martina",
+      "name": "Martina",
+      "surname": "Romano",
+      "birthYear": 2006,
+      "city": "Roma",
+      "role": "UI/UX Designer",
+      "description": "L'ho conosciuta nel 2021 in una community Discord. Ha sempre avuto chiaro come devono funzionare le cose prima ancora di sapere come farle sembrare bene.",
+      "stats": [],
+      "sampleFile": "",
+      "founder": false,
+      "avatar": "/assets/images/icons/avatar-martina.svg"
+    },
+    {
+      "id": "kevin",
+      "name": "Kevin",
+      "surname": "Mbaye",
+      "birthYear": 2005,
+      "city": "Caserta",
+      "role": "Game Designer",
+      "description": "Origini senegalesi, cresciuto in Campania. Ci siamo incontrati su Discord nel 2020, parlavamo di meccaniche di gioco per ore. Ora progetta le meccaniche dei nostri progetti gaming.",
+      "stats": [],
+      "sampleFile": "",
+      "founder": false,
+      "avatar": "/assets/images/icons/avatar-kevin.svg"
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia",
+      "surname": "Marino",
+      "birthYear": 2007,
+      "city": "Milano",
+      "role": "Graphic Designer & Illustrator",
+      "description": "L'ho trovata attraverso una community d'arte online nel 2021. Trasforma un'idea in qualcosa di visivo prima ancora che tu finisca di spiegarla.",
+      "stats": [],
+      "sampleFile": "",
+      "founder": false,
+      "avatar": "/assets/images/icons/avatar-sofia.svg"
+    },
+    {
+      "id": "ivan",
+      "name": "Ivan",
+      "surname": "Horvat",
+      "birthYear": 2004,
+      "city": "Trieste",
+      "role": "Full-Stack Developer",
+      "description": "Origini slovene, cresciuto a Trieste. Ci siamo conosciuti durante un hackathon online nel 2021. Sa lavorare su tutto lo stack senza perdere il filo.",
+      "stats": [],
+      "sampleFile": "",
+      "founder": false,
+      "avatar": "/assets/images/icons/avatar-ivan.svg"
+    },
+    {
+      "id": "giulia",
+      "name": "Giulia",
+      "surname": "Ferretti",
+      "birthYear": 2006,
+      "city": "Firenze",
+      "role": "Motion Designer",
+      "description": "L'ho conosciuta nel 2021 in una community di motion design. Le animazioni che produce sembrano sempre un passo avanti.",
+      "stats": [],
+      "sampleFile": "",
+      "founder": false,
+      "avatar": "/assets/images/icons/avatar-giulia.svg"
+    },
+    {
+      "id": "omar",
+      "name": "Omar",
+      "surname": "Benhaddou",
+      "birthYear": 2005,
+      "city": "Bologna",
+      "role": "Social Media & Growth",
+      "description": "Origini marocchine, cresciuto a Bologna. Ha capito prima di tutti come funziona davvero la crescita online.",
+      "stats": [],
+      "sampleFile": "",
+      "founder": false,
+      "avatar": "/assets/images/icons/avatar-omar.svg"
+    },
+    {
+      "id": "marco",
+      "name": "Marco",
+      "surname": "Vitale",
+      "birthYear": 2006,
+      "city": "Genova",
+      "role": "Audio Designer",
+      "description": "Ci siamo trovati su Discord nel 2020. Compone e progetta il suono per i nostri progetti.",
+      "stats": [],
+      "sampleFile": "",
+      "founder": false,
+      "avatar": "/assets/images/icons/avatar-marco.svg"
+    },
+    {
+      "id": "yasmine",
+      "name": "Yasmine",
+      "surname": "Cherif",
+      "birthYear": 2007,
+      "city": "Milano",
+      "role": "Cybersecurity",
+      "description": "Padre italiano, madre algerina. L'ho conosciuta durante una competizione CTF nel 2022. Si occupa della sicurezza dei sistemi.",
+      "stats": [],
+      "sampleFile": "",
+      "founder": false,
+      "avatar": "/assets/images/icons/avatar-yasmine.svg"
+    },
+    {
+      "id": "matteo",
+      "name": "Matteo",
+      "surname": "Serra",
+      "birthYear": 2008,
+      "city": "Cagliari",
+      "role": "Frontend Developer",
+      "description": "L'ho trovato su Reddit nel 2022. È il più giovane del team e fa le cose più assurde con il codice frontend.",
+      "stats": [],
+      "sampleFile": "",
+      "founder": false,
+      "avatar": "/assets/images/icons/avatar-matteo.svg"
+    },
+    {
+      "id": "laura",
+      "name": "Laura",
+      "surname": "De Santis",
+      "birthYear": 2004,
+      "city": "Bologna",
+      "role": "Project Manager",
+      "description": "Era la prima cliente vera di Blocksmith nel 2021. Ha finito per entrare nel team perché nessuno era bravo quanto lei a tenere tutto sotto controllo.",
+      "stats": [],
+      "sampleFile": "",
+      "founder": false,
+      "avatar": "/assets/images/icons/avatar-laura.svg"
+    }
+  ]
+}

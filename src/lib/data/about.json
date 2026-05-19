@@ -1,0 +1,94 @@
+{
+  "bio": [
+    "Ho iniziato a programmare nel 2020, durante il lockdown. Avevo 14 anni. Niente scuola in presenza, niente fuori — solo il computer. Ho iniziato per curiosità, senza corsi, senza nessuno che mi guidasse. Java prima, poi i sistemi backend, poi l'architettura. Studiavo da solo, la notte, finché non capivo come funzionava una cosa.",
+    "Nel 2021, a 15 anni, ho aperto Blocksmith. Non era un piano — era la cosa naturale da fare. Avevo già un metodo, avevo già dei progetti, mancava solo un nome sopra. Ho imparato a gestire tutto in autonomia: la parte tecnica, quella amministrativa, i clienti, i flussi di lavoro.",
+    "A fine 2023 sono entrato in AzureMC per aiutare un amico. Ero tra i fondatori del progetto e contribuivo anche economicamente, pagando parte dell'infrastruttura. Ho iniziato occupandomi di lore design, UX/UI e game design — è lì che ho imparato queste cose davvero, su un progetto reale con utenti reali. Col tempo mi sono spostato anche sul backend e sull'ottimizzazione della rete Java. A gennaio 2026 ho lasciato per concentrarmi a tempo pieno su Blocksmith.",
+    "Nel 2024, mentre ero ancora in AzureMC, ho ricevuto un ban ingiusto su una piattaforma. Invece di lasciar perdere ho iniziato a studiare come funzionano le regole di queste piattaforme — cosa possono fare, cosa non possono fare, dove sbagliano e come si può rispondere. Sono andato in profondità per mesi. Da quella storia è nato qualcosa di concreto.",
+    "Ad agosto 2025 ho iniziato a lavorare come tester professionista su sistemi reali, focalizzandomi su debugging e sicurezza. Ho continuato fino ad aprile 2026.",
+    "A gennaio 2026, nello stesso periodo in cui lasciavo AzureMC, ho iniziato ad aiutare ufficialmente utenti e creator che si trovano nella mia stessa situazione con i ban sulle piattaforme — qualcosa che conoscevo già dall'interno.",
+    "Oggi, maggio 2026, ho 20 anni. Blocksmith è il progetto principale. Tutto il resto è stato il percorso per arrivare qui."
+  ],
+  "stats": [
+    { "label": "CODING", "value": 95 },
+    { "label": "DESIGN", "value": 90 },
+    { "label": "LEADERSHIP", "value": 88 },
+    { "label": "PROBLEM SOLVING", "value": 96 },
+    { "label": "GRIND", "value": 100 }
+  ],
+  "specialAbility": "FORGE VISION — Trasforma la curiosità in sistemi che funzionano davvero",
+  "skills": [
+    {
+      "id": "dev",
+      "title": "Sviluppo Software, Backend & QA",
+      "icon": "/assets/images/icons/icon-dev.svg",
+      "items": [
+        "Sviluppo Backend Java & Architettura Software (Dal 2020)",
+        "Backend & Network Infrastructure | AzureMC (Nov 2025 – In corso)",
+        "Quality Assurance Testing (Ago 2025 – Apr 2026)",
+        "Integrazione Asset 3D (Apr 2026 – Mag 2026)"
+      ]
+    },
+    {
+      "id": "legal",
+      "title": "Legal Tech, Compliance & Difesa Digitale",
+      "icon": "/assets/images/icons/icon-legal.svg",
+      "items": [
+        "Analisi DSA e Platform Policies (Dal 2024)",
+        "Consulenza DSA / ADR / ODS (Gen 2026 – In corso)"
+      ]
+    },
+    {
+      "id": "biz",
+      "title": "Imprenditorialità & Operations",
+      "icon": "/assets/images/icons/icon-business.svg",
+      "items": [
+        "Fondazione BLOCKSMITH (Dal 2021)",
+        "Gestione Amministrativa e Flussi di Lavoro (Dal 2021)"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2020",
+      "title": "Il Lockdown & La Svolta Tech",
+      "description": "A 14 anni inizio a programmare. Sfrutto il periodo del COVID per focalizzarmi totalmente sul codice, passando a uno studio metodico e strutturato della programmazione backend in Java.",
+      "status": "completed"
+    },
+    {
+      "year": "2021",
+      "title": "L'Anima Imprenditoriale",
+      "description": "A 15 anni fondo BLOCKSMITH. Inizio a studiare in autonomia gestione amministrativa e flussi di lavoro.",
+      "status": "completed"
+    },
+    {
+      "year": "2024",
+      "title": "La Spinta Legal Tech",
+      "description": "A seguito di un ban ingiusto, inizio a studiare il Digital Services Act (DSA) e i diritti digitali europei.",
+      "status": "completed"
+    },
+    {
+      "year": "Agosto 2025",
+      "title": "QA Tester Professionista",
+      "description": "Attività strutturata come QA Tester, debugging e sicurezza (fino Apr 2026).",
+      "status": "completed"
+    },
+    {
+      "year": "Novembre 2025",
+      "title": "AzureMC Network",
+      "description": "Backend e network infrastructure per flussi di utenza complessi.",
+      "status": "completed"
+    },
+    {
+      "year": "Gennaio 2026",
+      "title": "Consulenza DSA / ADR / ODS",
+      "description": "Lancio servizio attivo di supporto e consulenza legale digitale.",
+      "status": "in-progress"
+    },
+    {
+      "year": "Maggio 2026",
+      "title": "Oggi",
+      "description": "Profilo consolidato come sviluppatore backend e specialista Legal Tech, pronto per il mercato internazionale.",
+      "status": "in-progress"
+    }
+  ]
+}
