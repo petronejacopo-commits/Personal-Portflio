@@ -41,8 +41,8 @@ export default function AdminLoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0D0D0D] flex items-center justify-center p-4">
-      <div className="bg-[#1A1A1A] border border-[#262626] p-8 w-full max-w-md mx-4 md:mx-0 relative shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+    <div className="min-h-screen bg-[#1E0F05] flex items-center justify-center p-4">
+      <div className="bg-[#2D1A0A] border border-[#3A1F0D] p-8 w-full max-w-md mx-4 md:mx-0 relative shadow-[0_0_15px_rgba(0,0,0,0.5)]">
         <h2 className="font-title text-2xl text-amber-500 mb-6 text-center uppercase tracking-widest">
           Admin Access
         </h2>
@@ -60,7 +60,7 @@ export default function AdminLoginPage() {
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full bg-[#0D0D0D] border border-gray-800 p-3 text-white font-sans focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+              className="w-full bg-[#1E0F05] border border-gray-800 p-3 text-white font-sans focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
               required
             />
           </div>
@@ -71,14 +71,14 @@ export default function AdminLoginPage() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full bg-[#0D0D0D] border border-gray-800 p-3 text-white font-sans focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+              className="w-full bg-[#1E0F05] border border-gray-800 p-3 text-white font-sans focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
               required
             />
           </div>
 
           <button
             type="submit"
-            className="mt-2 border border-stone-600 text-white hover:border-amber-500 hover:shadow-[0_0_12px_rgba(212,168,67,0.4)] px-[24px] py-[12px] font-ui uppercase tracking-wider transition-all duration-300 cursor-pointer w-full"
+            className="mt-2 border border-stone-600 text-white hover:border-amber-neon hover:shadow-[0_0_12px_rgba(245,214,78,0.4)] px-[24px] py-[12px] font-ui uppercase tracking-wider transition-all duration-300 cursor-pointer w-full"
           >
             Accedi
           </button>

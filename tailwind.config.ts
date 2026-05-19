@@ -9,22 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        black: '#0D0D0D',
+        black: '#1E0F05',
         gray: {
-          400: '#A09888',
-          800: '#262626',
-          900: '#1A1A1A',
+          400: '#C4A86A',
+          800: '#3A1F0D',
+          900: '#2D1A0A',
         },
         amber: {
-          500: '#D4A843', // accento primario
+          500: '#D9A63E',
+          neon: '#F5D64E', // neon glow CTA
+
         },
         orange: {
-          700: '#B87351', // terracotta
+          700: '#DC4424', // terracotta
         },
         stone: {
-          600: '#8B6B4A', // bronzo
+          600: '#803014', // bronzo
         },
-        white: '#F5F0E8', // testo chiaro
+        white: '#FFFFFF', // testo chiaro
       },
       fontFamily: {
         sans: ['var(--font-inter)'],

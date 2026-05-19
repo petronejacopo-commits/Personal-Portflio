@@ -13,14 +13,14 @@ Costruito con un'architettura moderna, veloce e ricca di animazioni interattive.
 - **Auth:** JWT (Jose) per custom edge middleware
 
 ## 🎨 Palette Colori
-- Sfondo Principale (Nero): `#0D0D0D`
-- Grigio Primario (Sfondi Card): `#1A1A1A`
-- Grigio Secondario (Bordi): `#262626`
-- Ambra (Accento Primario): `#D4A843`
-- Terracotta (Accento Secondario): `#B87351`
-- Bronzo: `#8B6B4A`
-- Testo Chiaro: `#F5F0E8`
-- Testo Secondario: `#A09888`
+- Sfondo Principale (Nero): `#1E0F05`
+- Grigio Primario (Sfondi Card): `#2D1A0A`
+- Grigio Secondario (Bordi): `#3A1F0D`
+- Ambra (Accento Primario): `#D9A63E`
+- Terracotta (Accento Secondario): `#DC4424`
+- Bronzo: `#803014`
+- Testo Chiaro: `#FFFFFF`
+- Testo Secondario: `#C4A86A`
 
 ## 🚀 Setup Locale
 

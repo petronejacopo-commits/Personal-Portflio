@@ -41,7 +41,7 @@ export default function AdminDashboardPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-[#1A1A1A] border border-[#262626] p-6 rounded-sm">
+        <div className="bg-[#2D1A0A] border border-[#3A1F0D] p-6 rounded-sm">
           <h2 className="font-ui text-xl text-white mb-2 uppercase tracking-wider">CMS Payload</h2>
           <p className="font-sans text-sm text-gray-400 mb-6">
             Gestisci i contenuti del sito, inclusi i progetti, il team e i testi delle pagine.
@@ -51,7 +51,7 @@ export default function AdminDashboardPage() {
           </AmberButton>
         </div>
 
-        <div className="bg-[#1A1A1A] border border-[#262626] p-6 rounded-sm">
+        <div className="bg-[#2D1A0A] border border-[#3A1F0D] p-6 rounded-sm">
           <h2 className="font-ui text-xl text-white mb-2 uppercase tracking-wider">Messaggi</h2>
           <p className="font-sans text-sm text-gray-400 mb-6">
             Visualizza i messaggi ricevuti dal modulo di contatto del sito.

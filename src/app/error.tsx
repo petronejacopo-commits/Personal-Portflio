@@ -17,7 +17,7 @@ export default function ErrorPage({
   }, [error]);
 
   return (
-    <div className="min-h-screen bg-[#0D0D0D] flex flex-col items-center justify-center p-4 text-center">
+    <div className="min-h-screen bg-[#1E0F05] flex flex-col items-center justify-center p-4 text-center">
       <h1 className="font-title text-4xl md:text-6xl text-red-500 mb-4 uppercase tracking-widest">
         Errore di Sistema
       </h1>

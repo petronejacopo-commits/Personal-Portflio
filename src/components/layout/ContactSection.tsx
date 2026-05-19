@@ -29,7 +29,7 @@ export default function ContactSection() {
 
   return (
     <div className="py-[40px] px-[16px] md:py-[80px] md:px-[32px] max-w-[600px] mx-auto">
-      <div className="flex justify-center mb-4"><svg id="raven-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 22h20L12 2z" stroke="#D4A843" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
+      <div className="flex justify-center mb-4"><svg id="raven-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 22h20L12 2z" stroke="#D9A63E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
       <h2 className="font-title text-2xl text-amber-500 mb-8 uppercase tracking-widest text-center">
         Contattami
       </h2>
@@ -46,7 +46,7 @@ export default function ContactSection() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full bg-[#1A1A1A] border border-[#262626] p-4 text-white font-sans focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+            className="w-full bg-[#2D1A0A] border border-[#3A1F0D] p-4 text-white font-sans focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
           />
         </div>
 
@@ -61,7 +61,7 @@ export default function ContactSection() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full bg-[#1A1A1A] border border-[#262626] p-4 text-white font-sans focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+            className="w-full bg-[#2D1A0A] border border-[#3A1F0D] p-4 text-white font-sans focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
           />
         </div>
 
@@ -76,13 +76,13 @@ export default function ContactSection() {
             onChange={handleChange}
             required
             rows={5}
-            className="w-full bg-[#1A1A1A] border border-[#262626] p-4 text-white font-sans focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors resize-y"
+            className="w-full bg-[#2D1A0A] border border-[#3A1F0D] p-4 text-white font-sans focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors resize-y"
           />
         </div>
 
         <button
           type="submit"
-          className="w-full border border-stone-600 text-white hover:border-amber-500 hover:shadow-[0_0_12px_rgba(212,168,67,0.4)] px-[24px] py-[16px] font-ui uppercase tracking-wider transition-all duration-300 cursor-pointer text-center"
+          className="w-full border border-stone-600 text-white hover:border-amber-neon hover:shadow-[0_0_12px_rgba(245,214,78,0.4)] px-[24px] py-[16px] font-ui uppercase tracking-wider transition-all duration-300 cursor-pointer text-center"
         >
           Invia Messaggio
         </button>

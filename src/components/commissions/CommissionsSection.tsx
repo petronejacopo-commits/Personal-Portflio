@@ -86,7 +86,7 @@ export default function CommissionsSection() {
       <section className="mb-20 mt-12">
         <ScrollReveal>
           <div className="flex items-center gap-3 mb-4">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F5F0E8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"></path>
               <path d="M14 2v6h6"></path>
               <path d="m3 12.5 3 3 7-7"></path>

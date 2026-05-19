@@ -7,12 +7,12 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
-  { name: 'Home', path: '/' },
-  { name: 'Chi Sono', path: '/chi-sono' },
-  { name: 'Blocksmith', path: '/blocksmith' },
-  { name: 'Commissioni', path: '/commissioni' },
-  { name: 'My Devs', path: '/my-devs' },
-  { name: 'Team', path: '/team' },
+  { name: 'Home', path: '/', icon: '/assets/images/icons/icon-home.svg' },
+  { name: 'Chi Sono', path: '/chi-sono', icon: '/assets/images/icons/icon-about.svg' },
+  { name: 'Blocksmith', path: '/blocksmith', icon: '/assets/images/icons/icon-blocksmith.svg' },
+  { name: 'Commissioni', path: '/commissioni', icon: '/assets/images/icons/icon-commissions.svg' },
+  { name: 'My Devs', path: '/my-devs', icon: '/assets/images/icons/icon-mydevs.svg' },
+  { name: 'Team', path: '/team', icon: '/assets/images/icons/icon-team.svg' },
 ];
 
 export default function Navigation() {
@@ -21,7 +21,7 @@ export default function Navigation() {
 
   return (
     <>
-      <nav aria-label="Main Navigation" className="fixed top-0 left-0 w-full h-[64px] z-50 bg-[#0D0D0D]/95 backdrop-blur-sm flex items-center justify-between px-4 md:px-8 border-b border-gray-800">
+      <nav aria-label="Main Navigation" className="fixed top-0 left-0 w-full h-[64px] z-50 bg-[#1E0F05]/95 backdrop-blur-sm flex items-center justify-between px-4 md:px-8 border-b border-gray-800">
         {/* Logo Section */}
         <Link href="/" className="flex items-center gap-3 relative z-[60] min-h-[44px] min-w-[44px]">
           <div className="w-[30px] h-[30px] relative flex items-center justify-center">
@@ -48,6 +48,7 @@ export default function Navigation() {
                   isActive ? 'text-white' : 'text-gray-400 hover:text-amber-500'
                 }`}
               >
+                {link.icon && <img src={link.icon} alt="" className="w-5 h-5 mr-2 object-contain filter-amber-500 inline-block" />}
                 {link.name}
                 {isActive && (
                   <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-amber-500 rounded-full" />
@@ -81,7 +82,7 @@ export default function Navigation() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="fixed inset-0 bg-[#0D0D0D]/80 backdrop-blur-md z-[55] md:hidden"
+              className="fixed inset-0 bg-[#1E0F05]/80 backdrop-blur-md z-[55] md:hidden"
               onClick={() => setIsMobileMenuOpen(false)}
             />
 
@@ -91,7 +92,7 @@ export default function Navigation() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'tween', duration: 0.3, ease: 'easeOut' }}
-              className="fixed top-0 right-0 h-full w-80 max-w-[100vw] bg-[#1A1A1A] border-l border-[#262626] z-[65] flex flex-col pt-[24px] px-6 shadow-2xl md:hidden"
+              className="fixed top-0 right-0 h-full w-80 max-w-[100vw] bg-[#2D1A0A] border-l border-[#3A1F0D] z-[65] flex flex-col pt-[24px] px-6 shadow-2xl md:hidden"
             >
               <div className="flex justify-end mb-8">
                 <button
@@ -114,11 +115,12 @@ export default function Navigation() {
                       key={link.name}
                       href={link.path}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className={`min-h-[48px] px-4 py-4 font-ui uppercase tracking-wider text-[18px] transition-colors duration-300 flex items-center border-b border-[#262626] ${
+                      className={`min-h-[48px] px-4 py-4 font-ui uppercase tracking-wider text-[18px] transition-colors duration-300 flex items-center border-b border-[#3A1F0D] ${
                         isActive ? 'text-amber-500 font-bold' : 'text-gray-400 hover:text-amber-500'
                       }`}
                     >
-                      {link.name}
+                      {link.icon && <img src={link.icon} alt="" className="w-5 h-5 mr-2 object-contain filter-amber-500 inline-block" />}
+                {link.name}
                       {isActive && (
                         <div className="ml-auto w-2 h-2 bg-amber-500 rounded-full" />
                       )}

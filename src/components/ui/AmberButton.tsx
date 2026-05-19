@@ -21,7 +21,7 @@ export default function AmberButton({
   let variantClasses = '';
   switch (variant) {
     case 'primary':
-      variantClasses = 'border border-stone-600 text-white hover:border-amber-500 hover:shadow-[0_0_12px_rgba(212,168,67,0.4)]';
+      variantClasses = 'border border-stone-600 text-white hover:border-amber-neon hover:shadow-[0_0_12px_rgba(245,214,78,0.4)]';
       break;
     case 'secondary':
       variantClasses = 'border border-gray-800 text-gray-400 hover:border-orange-700 hover:text-white';

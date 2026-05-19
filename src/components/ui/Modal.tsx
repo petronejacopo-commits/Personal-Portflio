@@ -75,7 +75,7 @@ export default function Modal({ isOpen, onClose, title, children }: ModalProps) 
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-[100] bg-[#0D0D0D]/80 backdrop-blur-sm"
+            className="fixed inset-0 z-[100] bg-[#1E0F05]/80 backdrop-blur-sm"
             onClick={onClose}
           />
 
@@ -88,7 +88,7 @@ export default function Modal({ isOpen, onClose, title, children }: ModalProps) 
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              className="bg-[#1A1A1A] w-full max-w-[600px] p-[40px] border border-[#262626] relative pointer-events-auto outline-none"
+              className="bg-[#2D1A0A] w-full max-w-[600px] p-[40px] border border-[#3A1F0D] relative pointer-events-auto outline-none"
               role="dialog"
               aria-modal="true"
               aria-labelledby={title ? "modal-title" : undefined}
@@ -97,7 +97,7 @@ export default function Modal({ isOpen, onClose, title, children }: ModalProps) 
               <button
                 onClick={onClose}
                 aria-label="Close modal"
-                className="absolute top-6 right-6 text-[#A09888] hover:text-[#D4A843] transition-colors duration-300"
+                className="absolute top-6 right-6 text-[#C4A86A] hover:text-[#D9A63E] transition-colors duration-300"
               >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="18" y1="6" x2="6" y2="18" />

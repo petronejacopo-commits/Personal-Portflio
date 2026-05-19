@@ -11,9 +11,9 @@ export default function SectionDivider() {
         xmlns="http://www.w3.org/2000/svg"
         className="w-full h-full"
       >
-        <line x1="0" y1="12" x2="495" y2="12" stroke="#262626" strokeWidth="1" />
-        <path d="M500 8 L504 12 L500 16 L496 12 Z" fill="#D4A843" />
-        <line x1="505" y1="12" x2="1000" y2="12" stroke="#262626" strokeWidth="1" />
+        <line x1="0" y1="12" x2="495" y2="12" stroke="#3A1F0D" strokeWidth="1" />
+        <path d="M500 8 L504 12 L500 16 L496 12 Z" fill="#D9A63E" />
+        <line x1="505" y1="12" x2="1000" y2="12" stroke="#3A1F0D" strokeWidth="1" />
       </svg>
     </div>
   );

@@ -43,7 +43,7 @@ export default function RootLayout({
       className={`${cinzel.variable} ${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] bg-amber-500 text-black px-4 py-2 font-bold">Skip to content</a>
-      <body className="min-h-full flex flex-col font-sans bg-[#0D0D0D] text-[#F5F0E8]">
+      <body className="min-h-full flex flex-col font-sans bg-[#1E0F05] text-[#FFFFFF]">
         <Navigation />
         <main id="main-content" className="flex-grow pt-[64px]">
           {children}

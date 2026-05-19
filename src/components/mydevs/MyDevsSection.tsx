@@ -42,7 +42,7 @@ export default function MyDevsSection() {
                 style={{ borderLeft: `3px solid ${dev.color}` }}
               >
                 {dev.badge && (
-                  <div className="absolute top-4 right-4 bg-[#B87351] text-[#0D0D0D] font-ui text-[10px] uppercase tracking-widest px-2 py-1 font-bold">
+                  <div className="absolute top-4 right-4 bg-[#DC4424] text-[#1E0F05] font-ui text-[10px] uppercase tracking-widest px-2 py-1 font-bold">
                     {dev.badge}
                   </div>
                 )}

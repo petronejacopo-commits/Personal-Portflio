@@ -19,7 +19,7 @@ export const logoLineDrawing = (svgElement: SVGSVGElement): void => {
       if (eyes.length > 0) {
         anime({
           targets: eyes,
-          fill: ['transparent', '#D4A843'],
+          fill: ['transparent', '#F5D64E'],
           duration: 1000,
           easing: 'easeOutQuad',
           direction: 'alternate',
@@ -59,7 +59,7 @@ export const textScramble = (element: HTMLElement, finalText: string, duration: 
   return interval;
 };
 
-export const particleBurst = (buttonElement: HTMLElement, color: string = '#D4A843'): void => {
+export const particleBurst = (buttonElement: HTMLElement, color: string = '#F5D64E'): void => {
   if (!buttonElement) return;
 
   const particlesCount = 25;
@@ -128,7 +128,7 @@ export const formSuccessMorph = (formElement: HTMLElement): void => {
     complete: () => {
       anime({
         targets: pathTarget,
-        stroke: ['#D4A843', '#38b764'],
+        stroke: ['#D9A63E', '#38b764'],
         fill: ['transparent', 'transparent'],
         duration: 300,
         easing: 'linear'

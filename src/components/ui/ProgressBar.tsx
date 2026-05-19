@@ -69,12 +69,12 @@ export default function ProgressBar({ label, value, className = '' }: ProgressBa
     <div ref={containerRef} className={`flex flex-col gap-2 ${className}`}>
       <div className="flex justify-between items-end">
         <span ref={labelRef} className="font-ui text-xs text-white uppercase tracking-widest">{label}</span>
-        <span ref={valueRef} className="font-sans text-xs text-amber-500">{value}%</span>
+        <span ref={valueRef} className="font-sans text-xs text-[#D9A63E]">{value}%</span>
       </div>
-      <div className="h-[4px] w-full bg-gray-800 rounded-full overflow-hidden">
+      <div className="h-[4px] w-full bg-[#803014] rounded-full overflow-hidden">
         <div
           ref={barRef}
-          className="h-full bg-amber-500 rounded-full"
+          className="h-full bg-[#DC4424] rounded-full"
           style={{ width: '0%' }}
         />
       </div>

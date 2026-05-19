@@ -24,9 +24,9 @@ export const Settings: GlobalConfig = {
       name: 'palette',
       type: 'group',
       fields: [
-        { name: 'primary', type: 'text', defaultValue: '#D4A843' },
-        { name: 'secondary', type: 'text', defaultValue: '#B87351' },
-        { name: 'dark', type: 'text', defaultValue: '#1A1A1A' }
+        { name: 'primary', type: 'text', defaultValue: '#D9A63E' },
+        { name: 'secondary', type: 'text', defaultValue: '#DC4424' },
+        { name: 'dark', type: 'text', defaultValue: '#2D1A0A' }
       ]
     }
   ],

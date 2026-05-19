@@ -19,7 +19,7 @@ function WireframeSphere() {
   return (
     <mesh ref={meshRef}>
       <sphereGeometry args={[2, 16, 16]} />
-      <meshBasicMaterial color="#D4A843" wireframe />
+      <meshBasicMaterial color="#D9A63E" wireframe />
     </mesh>
   );
 }
@@ -71,13 +71,13 @@ export function SkillTreePreview() {
   ];
 
   return (
-    <div className="w-full h-[250px] bg-[#0D0D0D] relative overflow-hidden">
+    <div className="w-full h-[250px] bg-[#1E0F05] relative overflow-hidden">
       {/* SVG Lines */}
       <svg className="absolute inset-0 w-full h-full pointer-events-none">
-        <line x1="50%" y1="10%" x2="30%" y2="50%" stroke={activeNode === 2 || activeNode === 1 ? '#D4A843' : '#262626'} strokeWidth="2" />
-        <line x1="50%" y1="10%" x2="70%" y2="50%" stroke={activeNode === 3 || activeNode === 1 ? '#D4A843' : '#262626'} strokeWidth="2" />
-        <line x1="30%" y1="50%" x2="50%" y2="90%" stroke={activeNode === 4 || activeNode === 2 ? '#D4A843' : '#262626'} strokeWidth="2" />
-        <line x1="70%" y1="50%" x2="50%" y2="90%" stroke={activeNode === 4 || activeNode === 3 ? '#D4A843' : '#262626'} strokeWidth="2" />
+        <line x1="50%" y1="10%" x2="30%" y2="50%" stroke={activeNode === 2 || activeNode === 1 ? '#D9A63E' : '#3A1F0D'} strokeWidth="2" />
+        <line x1="50%" y1="10%" x2="70%" y2="50%" stroke={activeNode === 3 || activeNode === 1 ? '#D9A63E' : '#3A1F0D'} strokeWidth="2" />
+        <line x1="30%" y1="50%" x2="50%" y2="90%" stroke={activeNode === 4 || activeNode === 2 ? '#D9A63E' : '#3A1F0D'} strokeWidth="2" />
+        <line x1="70%" y1="50%" x2="50%" y2="90%" stroke={activeNode === 4 || activeNode === 3 ? '#D9A63E' : '#3A1F0D'} strokeWidth="2" />
       </svg>
 
       {/* Nodes */}
@@ -85,7 +85,7 @@ export function SkillTreePreview() {
         <motion.button
           key={node.id}
           className={`absolute w-[80px] h-[40px] -ml-[40px] -mt-[20px] rounded-sm font-ui text-[10px] uppercase flex items-center justify-center transition-colors cursor-pointer border ${
-            activeNode === node.id ? 'bg-[#B87351] text-white border-[#B87351]' : 'bg-[#1A1A1A] text-gray-400 border-gray-600 hover:border-[#D4A843]'
+            activeNode === node.id ? 'bg-[#DC4424] text-white border-[#DC4424]' : 'bg-[#2D1A0A] text-gray-400 border-gray-600 hover:border-[#D9A63E]'
           }`}
           style={{ left: node.x, top: node.y }}
           whileHover={{ scale: 1.05 }}
@@ -121,7 +121,7 @@ export function DashboardPreview() {
   };
 
   return (
-    <div className="w-full h-[250px] bg-[#1A1A1A] flex flex-col justify-center p-8 gap-6 font-mono text-xs text-left">
+    <div className="w-full h-[250px] bg-[#2D1A0A] flex flex-col justify-center p-8 gap-6 font-mono text-xs text-left">
       <div className="flex flex-col gap-2">
         <div className="flex justify-between text-gray-400">
           <span>CPU USAGE</span>

@@ -52,7 +52,7 @@ export default function HeroSection() {
 
   const handleParticleClick = () => {
     if (buttonRef.current) {
-      particleBurst(buttonRef.current, '#D4A843');
+      particleBurst(buttonRef.current, '#D9A63E');
     }
   };
 
@@ -118,10 +118,10 @@ export default function HeroSection() {
               xmlns="http://www.w3.org/2000/svg"
               className="w-full h-full"
             >
-              <circle cx="12" cy="12" r="10" stroke="#D4A843" strokeWidth="2"/>
+              <circle cx="12" cy="12" r="10" stroke="#D9A63E" strokeWidth="2"/>
               <circle cx="9" cy="10" r="2" className="eye" fill="transparent"/>
               <circle cx="15" cy="10" r="2" className="eye" fill="transparent"/>
-              <path d="M10 16C10 16 11 17 12 17C13 17 14 16 14 16" stroke="#D4A843" strokeWidth="2" strokeLinecap="round"/>
+              <path d="M10 16C10 16 11 17 12 17C13 17 14 16 14 16" stroke="#D9A63E" strokeWidth="2" strokeLinecap="round"/>
             </svg>
           </div>
         </PulseAnimation>
@@ -152,7 +152,7 @@ export default function HeroSection() {
       {/* Indicatore Scroll */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-[bounce-diamond_2s_infinite_ease-in-out]">
         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 0L10 5L5 10L0 5L5 0Z" fill="#D4A843"/>
+          <path d="M5 0L10 5L5 10L0 5L5 0Z" fill="#D9A63E"/>
         </svg>
       </div>
     </section>

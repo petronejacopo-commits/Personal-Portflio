@@ -6,7 +6,7 @@
   "devs": [
     {
       "id": "blocksmith",
-      "icon": "⚙️",
+      "icon": "/assets/images/icons/icon-blocksmith-dev.svg",
       "title": "BlockSmith",
       "subtitle": "Pipeline 3D automatizzata",
       "story": "Nato durante la produzione di un gioco indipendente, quando ogni asset 3D richiedeva ore di conversioni manuali e pipeline rotte. Invece di adattarmi agli strumenti esistenti, ho costruito il mio: BlockSmith automatizza l'intera catena di importazione, texturing e animazione. È lo strumento che avrei voluto avere dall'inizio.",
@@ -15,7 +15,7 @@
         "Texturing avanzato (PBR, materiali custom)",
         "Animazione (Rigging e keyframe)"
       ],
-      "color": "#D4A843",
+      "color": "#D9A63E",
       "button": {
         "text": "Scopri BlockSmith",
         "variant": "secondary",
@@ -25,7 +25,7 @@
     },
     {
       "id": "discord-bot",
-      "icon": "🤖",
+      "icon": "/assets/images/icons/icon-discordbot.svg",
       "title": "Discord Bot",
       "subtitle": "Automazioni per community reali",
       "story": "Gestire 2.000 utenti su un server MMORPG a mano non è sostenibile. Ogni giorno: spam da moderare, ticket aperti ovunque, nessun log strutturato. Il bot nasce da quella necessità — non da un tutorial, ma da problemi reali che si ripetevano ogni notte. Oggi è modulare e gira su qualsiasi community.",
@@ -35,7 +35,7 @@
         "Log e analytics",
         "Comandi personalizzati"
       ],
-      "color": "#B87351",
+      "color": "#DC4424",
       "button": {
         "text": "Scopri il Bot",
         "variant": "secondary",
@@ -45,7 +45,7 @@
     },
     {
       "id": "the-core",
-      "icon": "💎",
+      "icon": "/assets/images/icons/icon-thecore.svg",
       "title": "The Core",
       "subtitle": "Motore MMORPG proprietario",
       "story": "Tutti i plugin MMORPG esistenti erano costruiti per server generici. Nessuno reggeva una progressione narrativa vera, un'economia bilanciata, un quest system ramificato. The Core è stato scritto da zero in Java, senza dipendenze esterne, per servire un'esperienza di gioco completa — non solo un server Minecraft con mod.",
@@ -55,7 +55,7 @@
         "Quest system dinamico",
         "Integrazione database"
       ],
-      "color": "#B87351",
+      "color": "#803014",
       "badge": "PROPRIETARIO",
       "button": {
         "text": "Scopri The Core",
@@ -66,7 +66,7 @@
     },
     {
       "id": "serverwatch",
-      "icon": "🛡️",
+      "icon": "/assets/images/icons/icon-serverwatch.svg",
       "title": "ServerWatch",
       "subtitle": "Monitoraggio intelligente del dedicato",
       "story": "Ogni volta che un progetto andava giù di notte, lo scoprivo tardi — dal silenzio, da un utente che scriveva. ServerWatch monitora CPU, RAM, disco e processi del dedicato in tempo reale e quando qualcosa va storto non manda solo un allarme: l'AI analizza le metriche e restituisce una lista di cause probabili con i fix suggeriti, già pronti.",
@@ -76,7 +76,7 @@
         "Analisi predittiva AI",
         "Report automatici"
       ],
-      "color": "#8B6B4A",
+      "color": "#803014",
       "button": {
         "text": "Scopri ServerWatch",
         "variant": "secondary",
