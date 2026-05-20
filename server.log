@@ -1,0 +1,20 @@
+
+> tmp_app@0.1.0 start
+> next start
+
+▲ Next.js 16.2.6
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 218ms
+⨯ The requested resource isn't a valid image for /assets/images/backgrounds/bg-geometric-1.webp received null
+⨯ The requested resource isn't a valid image for /assets/images/backgrounds/bg-texture-1.webp received null
+⨯ The requested resource isn't a valid image for /assets/images/backgrounds/bg-amber-accents.webp received null
+⨯ The requested resource isn't a valid image for /assets/images/backgrounds/bg-texture-1.webp received null
+⨯ internal image response is empty for /assets/images/commissions/comm-ux-1.webp
+⨯ internal image response is empty for /assets/images/commissions/comm-ux-2.webp
+⨯ internal image response is empty for /assets/images/commissions/comm-ux-3.webp
+⨯ internal image response is empty for /assets/images/commissions/comm-social-1.webp
+⨯ internal image response is empty for /assets/images/commissions/comm-social-2.webp
+⨯ The requested resource isn't a valid image for /assets/images/backgrounds/bg-texture-1.webp received null
+⨯ The requested resource isn't a valid image for /assets/images/backgrounds/bg-geometric-1.webp received null
+⨯ The requested resource isn't a valid image for /assets/images/backgrounds/bg-amber-accents.webp received null
