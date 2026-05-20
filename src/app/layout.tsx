@@ -1,23 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { Cinzel, Inter, Space_Grotesk } from "next/font/google";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
-
-const cinzel = Cinzel({
-  variable: "--font-cinzel",
-  subsets: ["latin"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://procione.com'),
@@ -41,10 +25,15 @@ export default function RootLayout({
   return (
     <html
       lang="it"
-      className={`${cinzel.variable} ${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}
+      className="h-full antialiased"
     >
-      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] bg-amber-500 text-black px-4 py-2 font-bold">Skip to content</a>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,300..600;1,14..32,300..600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+      </head>
       <body className="min-h-full flex flex-col font-sans bg-[#1E0F05] text-[#FFFFFF]">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-[#F5D64E] focus:text-[#1E0F05] focus:px-4 focus:py-2 focus:rounded">Vai al contenuto principale</a>
         <Navigation />
         <main id="main-content" className="flex-grow pt-[64px]">
           {children}

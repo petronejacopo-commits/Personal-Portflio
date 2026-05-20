@@ -29,9 +29,9 @@ const config: Config = {
         white: '#FFFFFF', // testo chiaro
       },
       fontFamily: {
-        sans: ['var(--font-inter)'],
-        title: ['var(--font-cinzel)'],
-        ui: ['var(--font-space-grotesk)'],
+        sans: ['Inter', 'sans-serif'],
+        title: ['Cinzel', 'serif'],
+        ui: ['Space Grotesk', 'sans-serif'],
       },
     },
   },
