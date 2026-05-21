@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import PartnerGlobe from './PartnerGlobe';
+import GlobeScene from './GlobeScene';
 
 export default function PartnersSection() {
   const [filter, setFilter] = useState('All Partners');
@@ -9,6 +10,10 @@ export default function PartnersSection() {
   return (
     <section className="w-full flex flex-col items-center">
       <PartnerGlobe filter={filter} onChangeFilter={setFilter} />
+
+      <div className="w-full h-[500px]">
+        <GlobeScene filter={filter === 'All Partners' ? 'All' : filter} />
+      </div>
 
       {/* Minecraft section */}
       {(filter === 'All Partners' || filter === 'Minecraft') && (

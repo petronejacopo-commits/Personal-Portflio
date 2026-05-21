@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic';
 
-const GlobeSceneInner = dynamic(() => import('./GlobeSceneInner'), {
+const GlobeSceneInner = dynamic<{ filter: string }>(() => import('./GlobeSceneInner'), {
   ssr: false,
   loading: () => (
     <div className="flex justify-center items-center w-full h-full">
@@ -11,10 +11,10 @@ const GlobeSceneInner = dynamic(() => import('./GlobeSceneInner'), {
   ),
 });
 
-export default function GlobeScene() {
+export default function GlobeScene({ filter }: { filter: string }) {
   return (
     <div className="w-full h-full min-h-[400px]">
-      <GlobeSceneInner />
+      <GlobeSceneInner filter={filter} />
     </div>
   );
 }
