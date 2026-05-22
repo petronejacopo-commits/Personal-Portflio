@@ -1,0 +1,11 @@
+{
+  "pageTitle": "Network Status",
+  "pageSubtitle": "Monitoriamo l'infrastruttura in tempo reale, 24 ore su 24. Ogni nodo, ogni connessione, ogni pacchetto.",
+  "metrics": [
+    { "label": "Server monitorati", "value": 12, "description": "Server fisici e VPS sotto monitoraggio continuo tramite ServerWatch. Ogni nodo viene controllato ogni 30 secondi per CPU, RAM, disco e latenza di rete." },
+    { "label": "Richieste processate", "value": 3800000, "description": "Totale di richieste HTTP, WebSocket e query database gestite dai nostri sistemi. Media giornaliera: 12.600 richieste al minuto nei picchi." },
+    { "label": "Uptime", "value": 99.8, "description": "Percentuale di uptime garantito sui server in gestione. Monitoriamo 24/7 con alert automatici su Telegram e Discord in caso di anomalie." },
+    { "label": "Workload attuale", "value": 67, "description": "Carico medio attuale sui nodi attivi. Sotto il 40%: idle. Tra 40-70%: operativo. Sopra 70%: scaliamo automaticamente le risorse." }
+  ],
+  "footerNote": "Dati aggiornati in tempo reale. I valori sono approssimati per eccesso e rappresentano una stima conservativa basata sui dati degli ultimi 30 giorni."
+}

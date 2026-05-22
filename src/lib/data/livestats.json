@@ -1,0 +1,11 @@
+{
+  "pageTitle": "Live Statistics",
+  "pageSubtitle": "I numeri della Forge, in diretta. Ogni cifra racconta una storia.",
+  "metrics": [
+    { "label": "Progetti completati", "value": 18, "description": "Progetti portati a termine dal 2021 a oggi, tra sviluppo software, game design, sicurezza informatica e consulenza DSA." },
+    { "label": "Ore di sviluppo", "value": 12500, "description": "Ore cumulative di lavoro del team Blocksmith. In media 2.500 ore all'anno, tra coding, design, testing e deployment." },
+    { "label": "Bug fixati", "value": 347, "description": "Bug, glitch e vulnerabilità risolti nei nostri progetti e per i nostri clienti. Ogni bug è una lezione. Ogni fix è un mattone in più nella Forge." },
+    { "label": "Utenti raggiunti", "value": 250000, "description": "Giocatori, sviluppatori e utenti che hanno interagito con i nostri tool, i nostri server o i nostri contenuti. Un numero che cresce ogni giorno." }
+  ],
+  "disclaimer": "Le statistiche sono basate su dati reali aggiornati periodicamente. I numeri riflettono il lavoro cumulativo del team Blocksmith e dei suoi collaboratori. Ultimo aggiornamento: maggio 2026."
+}

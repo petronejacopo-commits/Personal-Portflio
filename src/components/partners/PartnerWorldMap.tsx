@@ -108,7 +108,7 @@ export default function PartnerWorldMap() {
                     r={5}
                     fill={marker.color}
                     opacity={isActive ? 1 : 0.2}
-                    className="transition-all duration-300 hover:r-[8px] cursor-pointer"
+                    className="transition-all duration-300 hover:scale-150 transform-gpu origin-center cursor-pointer"
                   />
                 </Marker>
               );
