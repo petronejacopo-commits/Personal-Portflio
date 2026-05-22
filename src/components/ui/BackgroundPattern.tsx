@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function BackgroundPattern({ variant }: { variant: 'network' | 'livestats' | 'roadmap' | 'partners' | 'events' }) {
+export default function BackgroundPattern({ variant }: { variant: 'network' | 'livestats' | 'roadmap' | 'partners' | 'events' | 'lab' }) {
   if (variant === 'network') {
     return (
       <div
@@ -62,30 +62,48 @@ export default function BackgroundPattern({ variant }: { variant: 'network' | 'l
     );
   }
 
-  // events variant: soft glowing lights
-  return (
-    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#D9A63E] rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-blob" />
-      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-[#DC4424] rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-blob animation-delay-2000" />
-      <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-[#803014] rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-blob animation-delay-4000" />
+  if (variant === 'events') {
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#D9A63E] rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-blob" />
+        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-[#DC4424] rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-blob animation-delay-2000" />
+        <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-[#803014] rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-blob animation-delay-4000" />
 
-      <style dangerouslySetInnerHTML={{__html: `
-        @keyframes blob {
-          0% { transform: translate(0px, 0px) scale(1); }
-          33% { transform: translate(30px, -50px) scale(1.1); }
-          66% { transform: translate(-20px, 20px) scale(0.9); }
-          100% { transform: translate(0px, 0px) scale(1); }
-        }
-        .animate-blob {
-          animation: blob 7s infinite;
-        }
-        .animation-delay-2000 {
-          animation-delay: 2s;
-        }
-        .animation-delay-4000 {
-          animation-delay: 4s;
-        }
-      `}} />
+        <style dangerouslySetInnerHTML={{__html: `
+          @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+          }
+          .animate-blob {
+            animation: blob 7s infinite;
+          }
+          .animation-delay-2000 {
+            animation-delay: 2s;
+          }
+          .animation-delay-4000 {
+            animation-delay: 4s;
+          }
+        `}} />
+      </div>
+    );
+  }
+
+  // lab variant: chalkboard grid
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E0F05]">
+      <div
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
+          `,
+          backgroundSize: '20px 20px'
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#1E0F05] via-transparent to-transparent" />
     </div>
   );
 }
