@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import PartnerGlobe from './PartnerGlobe';
 import GlobeScene from './GlobeScene';
+import PartnerWorldMap from './PartnerWorldMap';
 
 export default function PartnersSection() {
   const [filter, setFilter] = useState('All Partners');
@@ -14,6 +15,9 @@ export default function PartnersSection() {
       <div className="w-full h-[500px]">
         <GlobeScene filter={filter === 'All Partners' ? 'All' : filter} />
       </div>
+
+      {/* World Map Integration directly after Globe */}
+      <PartnerWorldMap />
 
       {/* Minecraft section */}
       {(filter === 'All Partners' || filter === 'Minecraft') && (
