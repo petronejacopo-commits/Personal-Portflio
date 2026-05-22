@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function BackgroundPattern({ variant }: { variant: 'network' | 'livestats' | 'roadmap' | 'partners' }) {
+export default function BackgroundPattern({ variant }: { variant: 'network' | 'livestats' | 'roadmap' | 'partners' | 'events' }) {
   if (variant === 'network') {
     return (
       <div
@@ -45,18 +45,45 @@ export default function BackgroundPattern({ variant }: { variant: 'network' | 'l
     );
   }
 
-  // partners variant
+  if (variant === 'partners') {
+    return (
+      <div className="absolute inset-0 opacity-5 pointer-events-none z-0 overflow-hidden flex items-center justify-center">
+        <div
+          className="w-[150%] h-[150%] rounded-full border-[40px] border-[#D9A63E] border-dashed"
+          style={{ animation: 'spin-slow 120s linear infinite' }}
+        />
+        <style dangerouslySetInnerHTML={{__html: `
+          @keyframes spin-slow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        `}} />
+      </div>
+    );
+  }
+
+  // events variant: soft glowing lights
   return (
-    <div className="absolute inset-0 opacity-5 pointer-events-none z-0 overflow-hidden flex items-center justify-center">
-      {/* Fallback stylized circles mimicking a map grid */}
-      <div
-        className="w-[150%] h-[150%] rounded-full border-[40px] border-[#D9A63E] border-dashed"
-        style={{ animation: 'spin-slow 120s linear infinite' }}
-      />
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#D9A63E] rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-blob" />
+      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-[#DC4424] rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-blob animation-delay-2000" />
+      <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-[#803014] rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-blob animation-delay-4000" />
+
       <style dangerouslySetInnerHTML={{__html: `
-        @keyframes spin-slow {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
+        @keyframes blob {
+          0% { transform: translate(0px, 0px) scale(1); }
+          33% { transform: translate(30px, -50px) scale(1.1); }
+          66% { transform: translate(-20px, 20px) scale(0.9); }
+          100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob {
+          animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+          animation-delay: 4s;
         }
       `}} />
     </div>
