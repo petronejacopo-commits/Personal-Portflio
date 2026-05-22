@@ -1,0 +1,40 @@
+{
+  "pageTitle": "I Nostri Partner",
+  "pageSubtitle": "Collaborazioni di valore in tutto il mondo.",
+  "minecraftIntro": "Lavoriamo con alcuni dei network più grandi al mondo, aiutandoli a scalare le infrastrutture, ottimizzare le performance e sviluppare modalità di gioco uniche.",
+  "outsiderIntro": "Non solo Minecraft. Collaboriamo con aziende tech, framework e piattaforme cloud per portare la nostra esperienza verso nuovi orizzonti.",
+  "communicationNote": "Vuoi diventare un partner? Contattaci per scoprire come possiamo aiutarti a raggiungere i tuoi obiettivi.",
+  "minecraftPartners": [
+    "Hypixel", "Mineplex", "CubeCraft", "The Hive", "PikaNetwork",
+    "CoralMC", "GiacoMC", "Ventedia", "MetaMC", "NautilusNetwork",
+    "EthernityMC", "Mineville", "ManaCube", "Complex Gaming", "Wynncraft"
+  ],
+  "outsiderPartners": [
+    "Patchstack", "BotGuard OÜ", "Edgegap", "Coherence", "GameFroot",
+    "SandBoxd", "iDos Games", "Nomadic Bear Games", "Usiku Games", "APISentry"
+  ],
+  "minecraftTimeline": [
+    { "name": "CoralMC", "year": "2023" },
+    { "name": "AzureMC", "year": "2024" },
+    { "name": "Anomalia Network", "year": "2024" },
+    { "name": "NatureMC", "year": "2024" },
+    { "name": "Ventedia", "year": "2025" },
+    { "name": "GiacoMC", "year": "2025" },
+    { "name": "Oasis Lab", "year": "2025" },
+    { "name": "MetaMC", "year": "2025" },
+    { "name": "EthernityMC", "year": "2026" },
+    { "name": "PikaNetwork", "year": "2026" }
+  ],
+  "outsiderTimeline": [
+    { "name": "Patchstack", "year": "2025" },
+    { "name": "BotGuard", "year": "2025" },
+    { "name": "Edgegap", "year": "2025" },
+    { "name": "Coherence", "year": "2025" },
+    { "name": "GameFroot", "year": "2025" },
+    { "name": "SandBoxd", "year": "2025" },
+    { "name": "iDos Games", "year": "2025" },
+    { "name": "Nomadic Bear", "year": "2025" },
+    { "name": "Usiku Games", "year": "2025" },
+    { "name": "APISentry", "year": "2025" }
+  ]
+}
