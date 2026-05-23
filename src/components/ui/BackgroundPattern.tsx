@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function BackgroundPattern({ variant }: { variant: 'network' | 'livestats' | 'roadmap' | 'partners' | 'events' | 'lab' | 'careers' }) {
+export default function BackgroundPattern({ variant }: { variant: 'network' | 'livestats' | 'roadmap' | 'partners' | 'events' | 'lab' | 'careers' | 'press' }) {
   if (variant === 'network') {
     return (
       <div
@@ -108,19 +108,32 @@ export default function BackgroundPattern({ variant }: { variant: 'network' | 'l
     );
   }
 
-  // careers variant: desktop/documents styling
+  if (variant === 'careers') {
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E0F05]">
+        <div
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: 'repeating-linear-gradient(45deg, #D9A63E 0, #D9A63E 1px, transparent 0, transparent 50%)',
+            backgroundSize: '100px 100px'
+          }}
+        />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#1E0F05_80%)]" />
+      </div>
+    );
+  }
+
+  // press variant: clean professional background
   return (
     <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E0F05]">
-      {/* Subtle diagonal lines resembling scattered documents/notes */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1E0F05] via-[#2D1A0A]/20 to-[#1E0F05]" />
       <div
-        className="absolute inset-0 opacity-5"
+        className="absolute w-full h-full opacity-5"
         style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #D9A63E 0, #D9A63E 1px, transparent 0, transparent 50%)',
+          backgroundImage: 'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)',
           backgroundSize: '100px 100px'
         }}
       />
-      {/* Vignette effect to focus center */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#1E0F05_80%)]" />
     </div>
   );
 }

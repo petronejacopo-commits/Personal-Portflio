@@ -1,0 +1,23 @@
+{
+  "pageTitle": "Press Kit",
+  "pageSubtitle": "Materiali per media, giornalisti e creator che vogliono parlare di Blocksmith.",
+  "bio": "Jacopo Petrone, classe 2006, è il fondatore di Blocksmith, uno studio indipendente di sviluppo software, game design e consulenza tech. Ha iniziato a programmare nel 2020 durante il lockdown, a 14 anni. Nel 2021 ha fondato Blocksmith, che oggi conta 14 professionisti distribuiti in tutta Italia. Specializzato in backend Java, architetture di rete, sicurezza informatica e compliance DSA, ha lavorato con oltre 25 partner tra server Minecraft, startup cybersecurity e aziende tech internazionali.",
+  "teamBio": "Il team Blocksmith è composto da 14 professionisti under 25, distribuiti in tutta Italia, specializzati in sviluppo software, game design, UI/UX, cybersecurity, motion design, audio design e project management. Lavorano da remoto dal 2021, collaborando con partner in Europa, Africa, Asia e Nord America.",
+  "pressReleases": [
+    {
+      "title": "Blocksmith lancia ServerWatch: monitoraggio server con AI predittiva",
+      "date": "2025-09-15",
+      "text": "Blocksmith annuncia il lancio di ServerWatch, un tool di monitoraggio intelligente per server dedicati. Il software monitora CPU, RAM, disco e processi in tempo reale e utilizza AI per analizzare le metriche e suggerire fix. Già attivo su 12 server in produzione, con uptime medio del 99,8%."
+    },
+    {
+      "title": "Blocksmith debutta all'Italian Gaming Expo 2025 con un workshop su sicurezza e DSA",
+      "date": "2025-04-10",
+      "text": "Jacopo Petrone e Yasmine Cherif di Blocksmith hanno tenuto un workshop sulla sicurezza dei server di gioco e sulla compliance al Digital Services Act durante l'Italian Gaming Expo 2025 a Roma. Oltre 60 partecipanti tra operatori del gaming, sviluppatori e rappresentanti istituzionali."
+    },
+    {
+      "title": "Blocksmith espande le partnership internazionali: accordi in 4 continenti",
+      "date": "2026-01-20",
+      "text": "Blocksmith annuncia collaborazioni con aziende tech in 4 continenti. Tra i nuovi partner: Patchstack (Estonia), Edgegap (Canada), Coherence (Svezia), Usiku Games (Kenya), iDos Games (Kazakhstan) e APISentry (Nigeria)."
+    }
+  ]
+}
