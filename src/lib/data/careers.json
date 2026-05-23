@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Lavora con Noi",
+  "pageSubtitle": "Entra nella Forge. Costruisci il futuro del gaming e della sicurezza digitale.",
+  "intro": "Blocksmith è uno studio indipendente nato nel 2021. Oggi siamo 14 professionisti distribuiti in tutta Italia, più una rete di collaboratori e partner in Europa, Africa, Asia e Nord America. Lavoriamo da remoto, senza uffici, senza gerarchie rigide. Ogni membro del team è scelto per competenza e passione, non per curriculum.",
+  "positions": [
+    {
+      "title": "Senior Backend Developer",
+      "department": "Sviluppo",
+      "type": "Full-time - Remoto",
+      "longDescription": "Cerchiamo uno sviluppatore backend con esperienza su architetture Java o Node.js per unirsi al team di sviluppo. Lavorerai su The Core, ServerWatch e sui progetti futuri. Ti occuperai di progettare API, ottimizzare query database, gestire infrastrutture server. Non ti chiediamo una laurea. Ti chiediamo di mostrarci cosa sai fare.",
+      "requirements": ["Almeno 3 anni di esperienza in sviluppo backend Java o Node.js", "Conoscenza solida di database SQL e NoSQL", "Esperienza con API RESTful e WebSocket", "Capacità di lavorare in autonomia", "Buona conoscenza dell'inglese scritto", "Passione per il gaming e l'open-source"],
+      "benefits": ["Lavoro completamente da remoto", "Orari flessibili", "Budget annuale per formazione", "Accesso anticipato ai tool Blocksmith", "Possibilità di diventare socio dopo 18 mesi"],
+      "applyNote": "Invia la tua candidatura a careers@blocksmith.it con oggetto 'Candidatura Senior Backend Developer'."
+    },
+    {
+      "title": "Project Manager",
+      "department": "Operations",
+      "type": "Full-time - Remoto",
+      "longDescription": "Cerchiamo un Project Manager che tenga le fila dei nostri progetti. Blocksmith gestisce 4-6 progetti attivi tra sviluppo software, game design e consulenza. Serve qualcuno che sappia coordinare il team, parlare con i clienti e risolvere problemi prima che diventino emergenze.",
+      "requirements": ["Almeno 2 anni di esperienza in project management", "Metodologie agile (Scrum, Kanban)", "Ottima conoscenza dell'inglese", "Capacità di gestire più progetti in parallelo", "Familiarità con Notion, Trello, GitHub Projects"],
+      "benefits": ["Lavoro completamente da remoto", "Orari flessibili", "Budget formazione", "Ambiente internazionale", "Crescita rapida"],
+      "applyNote": "Invia la tua candidatura a careers@blocksmith.it con oggetto 'Candidatura Project Manager'."
+    },
+    {
+      "title": "Cybersecurity Specialist",
+      "department": "Sicurezza",
+      "type": "Full-time o Part-time - Remoto",
+      "longDescription": "Cerchiamo uno specialista di cybersecurity per potenziare la nostra offerta di audit e penetration testing. Lavorerai a fianco di Yasmine Cherif su progetti di sicurezza per partner internazionali.",
+      "requirements": ["Almeno 2 anni di esperienza in cybersecurity", "OWASP Top 10, Metasploit, Burp Suite", "Esperienza con audit smart contract (plus)", "Certificazioni CEH/OSCP apprezzate", "Mentalità da bug hunter"],
+      "benefits": ["Lavoro completamente da remoto", "Orari flessibili", "Tool professionali", "Budget certificazioni", "Team giovane e motivato"],
+      "applyNote": "Invia la tua candidatura a careers@blocksmith.it con oggetto 'Candidatura Cybersecurity Specialist'."
+    },
+    {
+      "title": "Avvocato specializzato DSA",
+      "department": "Legal Tech (futuro)",
+      "type": "Collaborazione - Remoto",
+      "longDescription": "Stiamo costruendo The Shield, il nostro futuro ADR Center per la risoluzione alternativa delle controversie digitali (Art. 21 DSA). Cerchiamo un avvocato specializzato in diritto digitale.",
+      "requirements": ["Iscrizione all'albo (Italia o UE)", "Specializzazione in diritto digitale, DSA, GDPR", "Esperienza con moderazione contenuti", "Inglese giuridico", "Interesse per gaming e piattaforme digitali"],
+      "benefits": ["Collaborazione flessibile", "Progetto innovativo nel legal tech", "Network di sviluppatori e creator", "Compenso basato sui casi", "Possibilità di diventare partner"],
+      "applyNote": "Invia la tua candidatura a careers@blocksmith.it con oggetto 'Candidatura Avvocato DSA'."
+    }
+  ]
+}

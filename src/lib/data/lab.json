@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Innovation Lab",
+  "pageSubtitle": "Esperimenti, prototipi e idee in lavorazione. Qui nasce il futuro della Forge.",
+  "intro": "Non tutto ciò che costruiamo diventa un prodotto. Alcune idee restano in fase di test per mesi, altre vengono abbandonate dopo poche settimane. Il Lab è il nostro spazio di sperimentazione: qui testiamo tecnologie, validiamo concept e spingiamo i limiti di ciò che sappiamo fare. Non tutto funziona. Ma tutto insegna.",
+  "projects": [
+    {
+      "name": "Project Chimera",
+      "status": "Testing",
+      "description": "Un sistema di rendering adattivo per server Minecraft che regola automaticamente la distanza di visualizzazione in base alle capacità del client. L'obiettivo è eliminare il lag senza sacrificare l'immersione. Attualmente in beta su un server di test con 50 giocatori.",
+      "tech": ["Java", "Paper API", "WebSocket", "Redis"],
+      "vision": "Permettere a server con centinaia di giocatori di mantenere 20 TPS stabili su hardware consumer."
+    },
+    {
+      "name": "ForgeNet Mesh",
+      "status": "Concept",
+      "description": "Una rete mesh decentralizzata per server Minecraft. Ogni nodo comunica con i vicini, creando una topologia resiliente che sopravvive alla caduta di singoli server. Pensato per eventi live e tornei dove l'uptime è critico.",
+      "tech": ["Go", "LibP2P", "gRPC", "WireGuard"],
+      "vision": "Zero single point of failure per network di server gaming."
+    },
+    {
+      "name": "Sentinel AI v2",
+      "status": "In Development",
+      "description": "La seconda iterazione del nostro anti-cheat. A differenza della prima versione (fallita per troppi falsi positivi), Sentinel v2 usa machine learning per distinguere pattern legittimi da comportamenti sospetti. Addestrato su 500.000 sessioni di gioco reali.",
+      "tech": ["Python", "TensorFlow", "Java", "Paper API"],
+      "vision": "Un anti-cheat che impara dai giocatori, non solo dalle regole."
+    },
+    {
+      "name": "BlockSmith Cloud Render",
+      "status": "Concept",
+      "description": "Un'estensione di BlockSmith che sposta il rendering degli asset 3D su GPU cloud. Invece di aspettare ore sul proprio PC, carichi il modello e lo ricevi texturizzato in pochi minuti. Pensato per team che non hanno hardware potente.",
+      "tech": ["AWS Lambda", "Blender Python API", "WebSocket", "React"],
+      "vision": "Democratizzare l'accesso al rendering 3D per team indie."
+    },
+    {
+      "name": "LegalBot Alpha",
+      "status": "Concept",
+      "description": "Un assistente AI per l'analisi preliminare di casi DSA. Carichi il regolamento di una piattaforma, descrivi il ban o la sanzione subita, e LegalBot ti dice se ci sono gli estremi per un ricorso. Non sostituisce un avvocato, ma fa risparmiare ore di ricerca.",
+      "tech": ["Python", "LangChain", "OpenAI API", "Next.js"],
+      "vision": "Il primo soccorso digitale per chi subisce moderazioni ingiuste."
+    }
+  ]
+}

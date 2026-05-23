@@ -1,0 +1,104 @@
+{
+  "pageTitle": "Roadmap",
+  "pageSubtitle": "Puntiamo alla qualità, non alla quantità. Pochi progetti, portati fino in fondo.",
+  "completedTitle": "Completati",
+  "inProgressTitle": "In Corso",
+  "futureTitle": "Futuri",
+  "completed": [
+    {
+      "title": "BlockSmith",
+      "period": "2023-2024",
+      "team": "Jacopo Petrone",
+      "shortDescription": "Pipeline 3D automatizzata per asset di gioco.",
+      "longDescription": "BlockSmith nasce durante la produzione di un gioco indipendente, quando ogni asset 3D richiedeva ore di conversioni manuali e pipeline rotte. Invece di adattarmi agli strumenti esistenti, ho costruito il mio: un tool che automatizza l'intera catena di importazione, texturing e animazione. Oggi BlockSmith gestisce formati OBJ, FBX, GLTF e applica materiali PBR con un click.",
+      "impact": "Ha ridotto i tempi di processing degli asset 3D dell'80%."
+    },
+    {
+      "title": "Discord Bot",
+      "period": "2024",
+      "team": "Jacopo Petrone, Luca Ferrari",
+      "shortDescription": "Bot di moderazione per community MMORPG.",
+      "longDescription": "Gestire 2.000 utenti su un server MMORPG a mano non è sostenibile. Ogni giorno: spam da moderare, ticket aperti ovunque, nessun log strutturato. Il bot nasce da quella necessità. Oggi è modulare e gira su qualsiasi community Discord.",
+      "impact": "Ha automatizzato il 90% delle operazioni di moderazione."
+    },
+    {
+      "title": "The Core",
+      "period": "2024-2025",
+      "team": "Jacopo Petrone",
+      "shortDescription": "Plugin MMORPG proprietario per server Minecraft.",
+      "longDescription": "Tutti i plugin MMORPG esistenti erano costruiti per server generici. The Core è stato scritto da zero in Java, senza dipendenze esterne, per servire un'esperienza di gioco completa.",
+      "impact": "Ha permesso a server Minecraft di offrire vere esperienze RPG."
+    },
+    {
+      "title": "ServerWatch",
+      "period": "2025",
+      "team": "Jacopo Petrone, Yasmine Cherif",
+      "shortDescription": "Monitoraggio intelligente server dedicati con AI predittiva.",
+      "longDescription": "Ogni volta che un progetto andava giù di notte, lo scoprivo tardi. ServerWatch monitora CPU, RAM, disco e processi in tempo reale e restituisce cause probabili con fix suggeriti.",
+      "impact": "Ha ridotto i downtime non pianificati del 65%."
+    },
+    {
+      "title": "Portfolio Procione",
+      "period": "2026",
+      "team": "Jacopo Petrone, Martina Romano, Ivan Horvat",
+      "shortDescription": "Questo sito. Portfolio professionale Game UI.",
+      "longDescription": "Il portfolio che stai navigando. Progettato, disegnato e sviluppato da zero come interfaccia di gioco premium. Parallasse, animazioni GSAP e Anime.js, mappe interattive, globe 3D.",
+      "impact": "Ha attirato l'attenzione di partner internazionali."
+    }
+  ],
+  "inProgress": [
+    {
+      "title": "Blocksmith Console (MVP)",
+      "period": "2026",
+      "team": "Jacopo Petrone, Riccardo Conti, Matteo Serra",
+      "shortDescription": "Interfaccia desktop unificata per gestire tutti i tool Blocksmith.",
+      "longDescription": "BlockSmith, Discord Bot, The Core, ServerWatch: quattro tool, quattro interfacce diverse. La Console li unifica in un'unica cabina di pilotaggio. Attualmente in fase alpha.",
+      "impact": "Previsto: riduzione del 40% del tempo speso a switchare tra tool.",
+      "vision": "Il centro di controllo per sviluppatori e game designer."
+    },
+    {
+      "title": "Consulenza DSA / ADR",
+      "period": "Gen 2026 – in corso",
+      "team": "Jacopo Petrone",
+      "shortDescription": "Supporto legale digitale per utenti e creator.",
+      "longDescription": "Tutto è iniziato nel 2024 con un ban ingiusto. Oggi offro supporto: analisi DSA e assistenza nelle procedure ADR e ODS.",
+      "impact": "Tasso di successo superiore al 70%.",
+      "vision": "Costruire un ADR Center con avvocati specializzati DSA."
+    }
+  ],
+  "future": [
+    {
+      "title": "Blocksmith Console (v1.0)",
+      "period": "2026-2027",
+      "team": "Jacopo, Riccardo, Matteo, Giulia Ferretti",
+      "shortDescription": "Rilascio stabile con funzionalità complete.",
+      "longDescription": "Dashboard centrale, gestione remota, analytics, notifiche, integrazione Discord, marketplace plugin.",
+      "vision": "Il punto di riferimento per il gaming server-side."
+    },
+    {
+      "title": "Nexus Engine",
+      "period": "2027-2028",
+      "team": "Jacopo, Ivan Horvat, Alessandro Greco",
+      "shortDescription": "Framework multiplayer cloud-agnostic oltre Minecraft.",
+      "longDescription": "Matchmaking, lobby scalabili, infrastruttura cloud-agnostic per team indie. Supporto Unity, Godot, HTML5.",
+      "vision": "Lo standard per implementare multiplayer in giorni, non mesi."
+    },
+    {
+      "title": "The Shield – ADR Center",
+      "period": "2027-2028",
+      "team": "Jacopo + avvocati DSA",
+      "shortDescription": "Polo di risoluzione alternativa controversie digitali.",
+      "longDescription": "Centro certificato ex Art. 21 DSA. Team tecnico-legale per la difesa dei diritti digitali.",
+      "vision": "Il riferimento europeo per la difesa di creator e sviluppatori."
+    },
+    {
+      "title": "Blocksmith Forge Team",
+      "period": "2028+",
+      "team": "Tutto il team + nuove assunzioni",
+      "shortDescription": "Reparto sviluppo software per aziende.",
+      "longDescription": "Sviluppo backend, frontend, sicurezza, game design, automazione per aziende. 20+ professionisti, partnership europee.",
+      "vision": "Il partner tecnico di riferimento per startup e aziende."
+    }
+  ],
+  "qualityMotto": "Puntiamo alla qualità, non alla quantità. Pochi progetti, portati fino in fondo."
+}

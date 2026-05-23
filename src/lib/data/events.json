@@ -1,0 +1,51 @@
+{
+  "pageTitle": "Eventi",
+  "pageSubtitle": "Dove il codice incontra le persone.",
+  "events": [
+    {
+      "name": "Torino Comics 2025",
+      "date": "11-13 Aprile 2025",
+      "location": "Oval Lingotto Fiere, Torino",
+      "team": "Jacopo Petrone, Riccardo Conti",
+      "activity": "Consulenza backend e debugging live",
+      "description": "Torino Comics 2025 ha registrato 70.000 presenze. L'area videogames ha ospitato tornei, postazioni freeplay e uno spazio dedicato ai game developer. Noi eravamo lì a offrire consulenza gratuita: abbiamo analizzato build, debugato codice in diretta, suggerito ottimizzazioni. 12 nuovi contatti e 3 progetti in pipeline.",
+      "testimonial": "'Pensavo che il mio problema di lag fosse irrisolvibile. Jacopo mi ha guardato il codice per 10 minuti e ha trovato il bug.' — Sviluppatore indie"
+    },
+    {
+      "name": "Savix 2025",
+      "date": "10-11 Maggio 2025",
+      "location": "Savigliano (CN)",
+      "team": "Jacopo Petrone, Matteo Serra",
+      "activity": "Configurazione server Minecraft per tornei",
+      "description": "Savix 2025 ha sfiorato i 27.000 visitatori. Noi abbiamo gestito la parte tecnica dei tornei Minecraft: server locali a bassa latenza, matchmaking sul posto, streaming su Twitch. 150 partecipanti, zero crash, zero lag.",
+      "testimonial": "'Avere un team tecnico dedicato ai tornei ha fatto la differenza.' — Organizzatore Savix"
+    },
+    {
+      "name": "Milano Comics & Games 2025",
+      "date": "13-14 Settembre 2025",
+      "location": "Malpensa Fiere, Busto Arsizio",
+      "team": "Kevin Mbaye, Martina Romano",
+      "activity": "Game design e UX/UI per sviluppatori indie",
+      "description": "Kevin ha offerto consulenza su meccaniche e bilanciamento. Martina ha analizzato interfacce e flussi utente. Abbiamo parlato con sviluppatori di giochi da tavolo digitali, visual novel, platform indie.",
+      "testimonial": "'Non avevo mai pensato al mio gioco in termini di curva di apprendimento.' — Game designer emergente"
+    },
+    {
+      "name": "Milan Games Week 2025",
+      "date": "28-30 Novembre 2025",
+      "location": "Fiera Milano, Rho",
+      "team": "Ivan Horvat, Giulia Ferretti",
+      "activity": "Analisi build e bilanciamento per area indie",
+      "description": "Oltre 130.000 visitatori. Ivan ha passato tre giorni a parlare di architettura software. Giulia ha mostrato come le animazioni trasformano l'esperienza di gioco.",
+      "testimonial": "'In 15 minuti mi ha suggerito 3 ottimizzazioni che non avrei mai trovato da solo.' — Sviluppatore indie"
+    },
+    {
+      "name": "Italian Gaming Expo 2025",
+      "date": "9-10 Aprile 2025",
+      "location": "Salone delle Fontane, Roma",
+      "team": "Jacopo Petrone, Yasmine Cherif",
+      "activity": "Workshop sicurezza server e compliance DSA",
+      "description": "IGE 2025 ha riunito oltre 1.600 partecipanti da 16 Paesi. Il nostro workshop su sicurezza server e DSA ha registrato il tutto esaurito. Yasmine ha mostrato attacchi reali, io ho spiegato come il DSA cambia le regole per il gaming.",
+      "testimonial": "'Il workshop sulla DSA è stato il più concreto di tutta la conferenza.' — CEO piattaforma gaming"
+    }
+  ]
+}

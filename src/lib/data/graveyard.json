@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Cimitero dei Progetti",
+  "pageSubtitle": "Non tutto va in porto. Ecco cosa abbiamo imparato.",
+  "intro": "Nel mondo tech si parla sempre dei successi. Nessuno racconta i progetti falliti, le idee abbandonate, i prototipi che non hanno mai visto la luce. Noi lo facciamo. Perché ogni fallimento è stato un mattone nella costruzione della Forge.",
+  "projects": [
+    {
+      "title": "Sentinel",
+      "period": "2022 – 3 mesi",
+      "cause": "Sistema anti-cheat comportamentale. Troppi falsi positivi: bannava giocatori legittimi con ping alto, scambiando la latenza per speedhack.",
+      "lesson": "Un sistema di sicurezza non può basarsi solo su pattern statistici. Serve contesto.",
+      "quote": "Sentinel mi ha insegnato che la sicurezza è una questione di contesto, non di regole."
+    },
+    {
+      "title": "Blocksmith Cloud",
+      "period": "2023 – 6 mesi",
+      "cause": "Piattaforma SaaS per deploy automatico server. Costi insostenibili per un indie, mercato saturo.",
+      "lesson": "Prima di costruire un SaaS, valida il mercato. Il tempismo è tutto.",
+      "quote": "Abbiamo speso sei mesi a costruire qualcosa che il mercato non voleva."
+    },
+    {
+      "title": "LoreForge",
+      "period": "2023-2024 – 4 mesi",
+      "cause": "Generatore AI di lore basato su GPT-2. Dopo 3-4 quest perdeva coerenza narrativa.",
+      "lesson": "L'AI senza contesto persistente non regge una narrazione.",
+      "quote": "LoreForge mi ha fatto capire che l'AI non sostituisce un game designer."
+    },
+    {
+      "title": "NetPulse",
+      "period": "2024 – 2 mesi",
+      "cause": "Overlay in-game per latenza. Ogni update di Minecraft rompeva il mod.",
+      "lesson": "Costruire su API di terze parti instabili è come costruire sulla sabbia.",
+      "quote": "Due mesi a rincorrere update. La dipendenza da terze parti è il rischio numero uno."
+    },
+    {
+      "title": "Blocksmith Bot v1",
+      "period": "2021 – 1 mese",
+      "cause": "Primo bot Discord. Copia-incolla di tutorial, zero funzionalità originali.",
+      "lesson": "Seguire tutorial non ti rende uno sviluppatore. Capire il codice sì.",
+      "quote": "Il Bot v1 era così brutto che lo tenevo nascosto. Senza quel fallimento non avrei mai scritto la v2."
+    }
+  ]
+}
