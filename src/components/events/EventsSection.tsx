@@ -68,6 +68,13 @@ export default function EventsSection() {
           ))}
         </div>
 
+        {/* FOOTER BADGE */}
+        <div className="w-full flex justify-center mt-16 pb-8">
+          <div className="font-[Space_Grotesk] text-[#D9A63E] text-xs border border-[#D9A63E] px-3 py-1">
+            Blocksmith Studio © 2020-2026
+          </div>
+        </div>
+
       </div>
     </section>
   );

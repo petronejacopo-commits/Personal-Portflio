@@ -18,9 +18,14 @@ export default function CareersSection() {
 
       <div className="relative z-10 w-full max-w-5xl flex flex-col items-center">
 
-        <h1 className="text-4xl md:text-6xl font-[Cinzel] font-bold text-[#D9A63E] mb-4 text-center">
-          {careersData.pageTitle}
-        </h1>
+        <div className="flex flex-col items-center mb-4">
+          <h1 className="text-4xl md:text-6xl font-[Cinzel] font-bold text-[#D9A63E] mb-4 text-center">
+            {careersData.pageTitle}
+          </h1>
+          <div className="font-[Space_Grotesk] text-[#D9A63E] text-xs border border-[#D9A63E] px-3 py-1 mt-2">
+            Blocksmith Studio © 2020-2026
+          </div>
+        </div>
         <p className="text-[#C4A86A] text-lg md:text-xl text-center max-w-2xl mb-8 font-[Inter]">
           {careersData.pageSubtitle}
         </p>
