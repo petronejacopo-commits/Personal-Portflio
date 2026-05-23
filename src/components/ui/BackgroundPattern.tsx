@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function BackgroundPattern({ variant }: { variant: 'network' | 'livestats' | 'roadmap' | 'partners' | 'events' | 'lab' | 'careers' | 'press' }) {
+export default function BackgroundPattern({ variant }: { variant: 'network' | 'livestats' | 'roadmap' | 'partners' | 'events' | 'lab' | 'careers' | 'press' | 'graveyard' }) {
   if (variant === 'network') {
     return (
       <div
@@ -111,6 +111,7 @@ export default function BackgroundPattern({ variant }: { variant: 'network' | 'l
   if (variant === 'careers') {
     return (
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E0F05]">
+        {/* Subtle diagonal lines resembling scattered documents/notes */}
         <div
           className="absolute inset-0 opacity-5"
           style={{
@@ -118,22 +119,47 @@ export default function BackgroundPattern({ variant }: { variant: 'network' | 'l
             backgroundSize: '100px 100px'
           }}
         />
+        {/* Vignette effect to focus center */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#1E0F05_80%)]" />
       </div>
     );
   }
 
-  // press variant: clean professional background
+  if (variant === 'press') {
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E0F05]">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1E0F05] via-[#2D1A0A]/20 to-[#1E0F05]" />
+        <div
+          className="absolute w-full h-full opacity-5"
+          style={{
+            backgroundImage: 'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)',
+            backgroundSize: '100px 100px'
+          }}
+        />
+      </div>
+    );
+  }
+
+  // graveyard variant: fog and desaturated
   return (
-    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E0F05]">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#1E0F05] via-[#2D1A0A]/20 to-[#1E0F05]" />
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#140F0A]">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#2D1A0A_0%,#140F0A_100%)] opacity-40" />
       <div
-        className="absolute w-full h-full opacity-5"
+        className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: 'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)',
-          backgroundSize: '100px 100px'
+          background: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noiseFilter\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noiseFilter)\'/%3E%3C/svg%3E")',
+          mixBlendMode: 'overlay',
+          animation: 'fog-drift 30s linear infinite'
         }}
       />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#140F0A] via-transparent to-[#140F0A]" />
+
+      <style dangerouslySetInnerHTML={{__html: `
+        @keyframes fog-drift {
+          0% { background-position: 0% 0%; }
+          100% { background-position: 100% 100%; }
+        }
+      `}} />
     </div>
   );
 }
